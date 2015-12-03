@@ -1,0 +1,532 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+		<!-- Цэснүүд -->
+		<menuitem id="menu_school" name="Сургууль" sequence="-10" />
+		<menuitem id="menu_school_config" name="Тохиргоо" parent="menu_school" sequence="1" />
+
+		<!-- Тохиргоо/Сургууль -->
+		<record id="view_school_info_form" model="ir.ui.view">
+			<field name="name">res.company.form1</field>
+			<field name="model">res.company</field>
+			<field name="type">form</field>
+			<field name="inherit_id" ref="base.view_company_form" />
+			<field name="arch" type="xml">
+				<notebook>
+					<page string="School">
+						<group col="2" colspan="2">
+							<separator string="Үндсэн" colspan="4" />
+							<field name="code" />
+							<field name="type" />
+						</group>
+						<group col="2" colspan="2">
+							<separator string="Хичээллэх хуваарь" colspan="4" />
+							<field name="class_duration" />
+							<field name="class_recess" />
+						</group>
+						<group col="2" colspan="2">
+							<separator string="Дүн бодолт" colspan="4" />
+							<field name="eval_formula" colspan="4" nolabel="1" />
+							<label
+								string="Жишээ: (p1+p2+p3+p4+p5)/5 
+						 Энд p1-Шалгалтын оноо, p2-Явцын оноо, p3-Бие даалт, p4-Ирц, p5-Идэвхи" />
+						</group>
+					</page>
+				</notebook>
+			</field>
+		</record>
+		<record id="open_school_info_form" model="ir.actions.act_window">
+			<field name="name">Сургууль</field>
+			<field name="res_model">res.company</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		
+		<menuitem action="open_school_info_form" id="menu_school_info_form"
+			parent="menu_school_config" name="Сургууль" sequence="-1" />
+
+		<!-- Тохиргоо/Үнэлгээ -->
+		<record id="view_school_mark_form" model="ir.ui.view">
+			<field name="name">school.mark.form</field>
+			<field name="model">school.mark</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Үнэлгээ">
+					<group colspan="2" col="2">
+						<field name="letter" select="1" />
+						<field name="gpa" />
+						<field name="lo_percent" />
+						<field name="hi_percent" />
+					</group>
+					<group colspan="2" col="2">
+						<field name="active" />
+						<field name="description" />
+					</group>
+				</form>
+			</field>
+		</record>
+		<record id="view_school_mark_tree" model="ir.ui.view">
+			<field name="name">school.mark.tree</field>
+			<field name="model">school.mark</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Үнэлгээ">
+					<field name="letter" select="1" />
+					<field name="lo_percent" />
+					<field name="hi_percent" />
+					<field name="gpa" />
+					<field name="description" />
+				</tree>
+			</field>
+		</record>
+		<record id="open_school_mark" model="ir.actions.act_window">
+			<field name="name">Үнэлгээ</field>
+			<field name="res_model">school.mark</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="domain">[('active','=',True)]</field>
+		</record>
+		<menuitem name="Үнэлгээ" id="menu_open_school_mark" action="open_school_mark"
+			sequence="1" parent="menu_school_config" />
+
+		<!-- Тохиргоо/Хугацаа -->
+		<menuitem id="school_time" name="Хугацаа" parent="menu_school_config"
+			sequence="3" />
+
+		<!-- Тохиргоо/Хугацаа/Хичээлийн жил -->
+		<record id="view_school_year_form" model="ir.ui.view">
+			<field name="name">school.year.form</field>
+			<field name="model">school.year</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Хичээлийн жил">
+					<field name="name" select="1" />
+					<field name="date_start" />
+					<field name="date_stop" />
+					<separator colspan="4" string="Семестер" />
+					<field colspan="4" name="term_ids" nolabel="1" widget="one2many_list">
+						<form string="Семестер">
+							<field name="name" select="1" />
+							<newline />
+							<field name="date_start" />
+							<field name="date_stop" />
+						</form>
+					</field>
+				</form>
+			</field>
+		</record>
+		<record id="view_school_year_tree" model="ir.ui.view">
+			<field name="name">school.year.tree</field>
+			<field name="model">school.year</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Хичээлийн жил">
+					<field name="name" select="1" />
+					<field name="date_start" />
+					<field name="date_stop" />
+				</tree>
+			</field>
+		</record>
+		<record id="open_school_year" model="ir.actions.act_window">
+			<field name="name">Хичээлийн жил</field>
+			<field name="res_model">school.year</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<menuitem name="Хичээлийн жил" id="menu_open_school_year"
+			action="open_school_year" sequence="1" parent="school_time" />
+
+		<!-- Тохиргоо/Хугацаа/Семестер -->
+		<record id="view_school_semester_form" model="ir.ui.view">
+			<field name="name">school.term.form</field>
+			<field name="model">school.term</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Семестер">
+					<field name="name" select="1" />
+					<newline />
+					<field name="date_start" />
+					<field name="date_stop" />
+					<field name="year_id" />
+				</form>
+			</field>
+		</record>
+		<record id="view_school_semester_tree" model="ir.ui.view">
+			<field name="name">school.term.tree</field>
+			<field name="model">school.term</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Семестер">
+					<field name="name" select="1" />
+					<field name="date_start" />
+					<field name="date_stop" />
+				</tree>
+			</field>
+		</record>
+		<record id="open_school_semester" model="ir.actions.act_window">
+			<field name="name">Семестер</field>
+			<field name="res_model">school.term</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<menuitem name="Семестер" id="menu_open_school_semester"
+			action="open_school_semester" sequence="1" parent="school_time" />
+
+		<!-- Тохиргоо/Хугацаа/Цагийн хуваарь -->
+		<record id="view_school_timeperiod_tree" model="ir.ui.view">
+			<field name="name">school.timeperiod.tree</field>
+			<field name="model">school.timeperiod</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Цагийн хуваарь">
+					<field name="name" />
+					<field name="start_time" />
+					<field name="duration" />
+				</tree>
+			</field>
+		</record>
+		<record id="open_school_timeperiod" model="ir.actions.act_window">
+			<field name="name">Цагууд</field>
+			<field name="res_model">school.timeperiod</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		<menuitem name="Цагийн хуваарь" id="menu_open_school_timeperiod"
+			action="open_school_timeperiod" sequence="1" parent="school_time" />
+
+		<!-- Тохиргоо/Танхим -->
+		<menuitem id="school_room" name="Анги/танхим" parent="menu_school_config"
+			sequence="4" />
+
+		<!-- Тохиргоо/Танхим/Өрөөний төрөл -->
+		<record id="view_school_classroom_type_form" model="ir.ui.view">
+			<field name="name">school.classroom.type.form</field>
+			<field name="model">school.classroom.type</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Өрөөний төрөл">
+					<field name="name" select="1" />
+					<field name="shortcut" />
+				</form>
+			</field>
+		</record>
+		<record id="view_school_classroom_type_tree" model="ir.ui.view">
+			<field name="name">school.classroom.type.tree</field>
+			<field name="model">school.classroom.type</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Өрөөний төрөл">
+					<field name="name" select="1" />
+					<field name="shortcut" />
+				</tree>
+			</field>
+		</record>
+		<record id="open_school_classroom_type" model="ir.actions.act_window">
+			<field name="name">Өрөөний төрөл</field>
+			<field name="res_model">school.classroom.type</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<menuitem name="Өрөөний төрөл" id="menu_open_school_classroom_type"
+			action="open_school_classroom_type" sequence="1" parent="school_room" />
+
+		<!-- Тохиргоо/Танхим/Анги -->
+		<record id="view_school_classroom_form" model="ir.ui.view">
+			<field name="name">school.classroom.form</field>
+			<field name="model">school.classroom</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Анги/танхим">
+					<field name="name" select="1" />
+					<field name="type" />
+					<field name="capacity" />
+				</form>
+			</field>
+		</record>
+		<record id="view_school_classroom_tree" model="ir.ui.view">
+			<field name="name">school.classroom.tree</field>
+			<field name="model">school.classroom</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Анги/танхим">
+					<field name="name" select="1" />
+					<field name="type" />
+					<field name="capacity" />
+				</tree>
+			</field>
+		</record>
+		<record id="open_school_classroom" model="ir.actions.act_window">
+			<field name="name">Анги/танхим</field>
+			<field name="res_model">school.classroom</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<menuitem name="Анги/танхим" id="menu_open_school_classroom"
+			action="open_school_classroom" sequence="2" parent="school_room" />
+		<!-- Сургалт -->
+		<menuitem id="menu_school_teaching" name="Сургалт" parent="menu_school"
+			sequence="5" />
+
+		<!-- Сургалт/Мэргэжил -->
+		<record id="view_school_prof_form" model="ir.ui.view">
+			<field name="name">school.profession.form</field>
+			<field name="model">school.profession</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Мэргэжил">
+					<field name="name" select="1" />
+					<field name="code" select="1" />
+					<field name="index" select="1" />
+					<separator colspan="4" string="Хөтөлбөрүүд" />
+					<field colspan="4" name="curr_ids" nolabel="1" widget="one2many_list">
+						<tree string="Хөтөлбөр">
+							<field name="name" />
+							<field name="credit" />
+							<field name="degree" />
+							<field name="study_type" />
+						</tree>
+					</field>
+				</form>
+			</field>
+		</record>
+		<record id="view_school_prof_tree" model="ir.ui.view">
+			<field name="name">school.profession.tree</field>
+			<field name="model">school.profession</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Мэргэжил">
+					<field name="name" select="1" />
+					<field name="code" select="1" />
+					<field name="index" select="1" />
+					<field name="web_page" widget="url" />
+				</tree>
+			</field>
+		</record>
+		<record id="open_school_prof" model="ir.actions.act_window">
+			<field name="name">Мэргэжил</field>
+			<field name="res_model">school.profession</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		<menuitem name="Мэргэжил" id="menu_open_school_prof" action="open_school_prof"
+			parent="menu_school_teaching" sequence="1" />
+
+		<!-- Сургалт/Сургалтын хөтөлбөр -->
+		<record id="view_school_curr_form" model="ir.ui.view">
+			<field name="name">school.curriculum.form</field>
+			<field name="model">school.curriculum</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Хөтөлбөр">
+					<field name="name" select="1" />
+					<field name="prof_id" select="2" />
+					<field name="study_type" />
+					<field name="duration" />
+					<field name="credit" />
+					<separator colspan="4" string="Хичээлүүд" />
+					<field colspan="4" name="lines" nolabel="1" widget="one2many_list"
+						mode="tree,form">
+						<tree string="Хичээл">
+							<field name="year" />
+							<field name="season" />
+							<field name="sub_id" select="1" />
+							<field name="credit" />
+							<field name="weeks" />
+							<field name="category" />
+							<field name="is_optional" />
+						</tree>
+						<form string="Хичээл">
+							<field name="year" />
+							<field name="season" />
+							<field name="sub_id" />
+							<field name="credit" />
+							<field name="weeks" />
+							<field name="category" />
+							<field name="is_optional" />
+						</form>
+					</field>
+				</form>
+			</field>
+		</record>
+		<record id="view_school_curr_tree" model="ir.ui.view">
+			<field name="name">school.curriculum.tree</field>
+			<field name="model">school.curriculum</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Хөтөлбөр">
+					<field name="name" select="1" />
+					<field name="prof_id" select="1" />
+					<field name="degree" select="1" />
+					<field name="study_type" select="2" />
+					<field name="credit" />
+					<field name="duration" />
+				</tree>
+			</field>
+		</record>
+		<record id="action_school_curr_form" model="ir.actions.act_window">
+			<field name="name">Сургалтын Хөтөлбөр</field>
+			<field name="res_model">school.curriculum</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		<menuitem action="action_school_curr_form" id="menu_action_school_curr_form"
+			parent="menu_open_school_prof" />
+
+		<!-- Хөтөлбөрийн хичээлүүдийн дэлгэцүүд шууд ил байдлаар хэрэглэгдэхгүй -->
+		<record id="view_school_curr_line_form" model="ir.ui.view">
+			<field name="name">school.curr.line.form</field>
+			<field name="model">school.curr.line</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Хөтөлбөрийн хичээлүүд">
+					<field name="category" select="1" />
+					<field name="curr_id" select="1" />
+					<field name="sub_id" select="1" />
+					<separator colspan="4" string="Хугацаа" />
+					<field name="year" select="2" />
+					<field name="season" select="2" />
+					<field name="weeks" />
+					<separator colspan="4" string="Хичээллэх цаг" />
+					<field name="hour1" />
+					<field name="hour2" />
+					<field name="hour3" />
+					<field name="hour4" />
+					<separator colspan="4" string="Бусад" />
+					<field name="credit" />
+					<field name="is_optional" />
+				</form>
+			</field>
+		</record>
+		<record id="view_school_curr_line_tree" model="ir.ui.view">
+			<field name="name">school.curr.line.tree</field>
+			<field name="model">school.curr.line</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Хөтөлбөрийн хичээлүүд">
+					<field name="sub_id" select="1" />
+					<field name="curr_id" select="1" />
+					<field name="category" select="1" />
+				</tree>
+			</field>
+		</record>
+		<record id="action_school_curr_line_form" model="ir.actions.act_window">
+			<field name="name">Хөтөлбөрийн хичээлүүд</field>
+			<field name="res_model">school.curr.line</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+
+
+		<!-- Сургалт/Хичээл -->
+		<record id="view_school_subject_form" model="ir.ui.view">
+			<field name="name">school.subject.form</field>
+			<field name="model">school.subject</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Хичээл">
+					<notebook colspan="4">
+						<page string="Ерөнхий">
+							<field name="name" select="1" />
+							<field name="code" select="1" />
+							<separator colspan="4" />
+							<field name="credit" />
+							<field name="prereq" />
+							<field name="type" />
+							<separator colspan="4" />
+							<field name="web_page" widget="url" />
+							<field name="active" />
+						</page>
+						<page string="Нэмэлт мэдээлэл">
+							<field name="notes" />
+						</page>
+					</notebook>
+				</form>
+			</field>
+		</record>
+		<record id="view_school_subject_tree" model="ir.ui.view">
+			<field name="name">school.subject.tree</field>
+			<field name="model">school.subject</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Хичээл">
+					<field name="name" select="1" />
+					<field name="code" select="1" />
+					<field name="type" select="2" />
+				</tree>
+			</field>
+		</record>
+		<record id="open_school_subject" model="ir.actions.act_window">
+			<field name="name">Хичээлүүд</field>
+			<field name="res_model">school.subject</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		<menuitem name="Хичээл" id="menu_school_subject" parent="menu_school_teaching"
+			action="open_school_subject" />
+
+		<!-- Сургалт/Хичээл Төлөвлөлт -->
+		<!-- menuitem id="menu_school_offering" name="Хичээл Төлөвлөлт" parent="menu_school_teaching"/ -->
+
+		<!-- Сургалт/Хичээл Төлөвлөлт -->
+		<record id="view_school_offering_form" model="ir.ui.view">
+			<field name="name">school.offering.form</field>
+			<field name="model">school.offering</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Хичээл Төлөвлөлт">
+					<separator colspan="4" string="Төлөвлөлт" />
+					<field name="curr_sub_id" domain="[('curr_id','=',curr_id)]" />
+					<field name="teacher_id" />
+					<field name="curr_id" select="2" />
+					<field name="term_id" />
+					<field name="date_start" />
+					<field name="date_stop" />
+
+					<separator colspan="4" string="Бусад" />
+					<field name="student_limit" />
+				</form>
+			</field>
+		</record>
+		<record id="view_school_offering_tree" model="ir.ui.view">
+			<field name="name">school.offering.tree</field>
+			<field name="model">school.offering</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Хичээл Төлөвлөлт">
+					<!-- зөвхөн энэ семестерийн хичээлүүдийг шүүж харуулах -->
+					<field name="term_id" select="2" />
+					<field name="curr_id" select="2" />
+					<field name="curr_sub_id" select="2" />
+					<field name="teacher_id" select="2" />
+				</tree>
+			</field>
+		</record>
+		<record id="open_school_offering" model="ir.actions.act_window">
+			<field name="name">Хичээл Төлөвлөлт</field>
+			<field name="res_model">school.offering</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<!--field name="domain">[('teacher','=',True)]</field -->
+		</record>
+
+		<menuitem name="Хичээл Төлөвлөлт" id="menu_school_offering"
+			action="open_school_offering" parent="menu_school_teaching" />
+
+		<!-- Улирлын хаалт хийх wizard -->
+		<wizard id="wizard_close_term" menu="False" model="school.term"
+			name="school.term.close" string="Улирлын хаалт хийх" />
+		<menuitem action="wizard_close_term" id="menu_close_term"
+			parent="menu_school" />
+
+		<!-- Тайлан -->
+		<menuitem id="menu_school_report" name="Тайлан" parent="menu_school"
+			sequence="10" />
+
+
+	</data>
+</openerp>

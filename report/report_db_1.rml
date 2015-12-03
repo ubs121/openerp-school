@@ -1,0 +1,1178 @@
+<?xml version="1.0"?>
+<document filename="test.pdf">
+  <template pageSize="(842.0,595.0)" title="Test" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="28.0" y1="28.0" width="786" height="539"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table1">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table3">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table2">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,0" stop="1,0"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="2,0" stop="2,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="2,0" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="2,0" stop="2,0"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="3,0" stop="3,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="3,0" stop="3,0"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="4,0" stop="4,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="4,0" stop="4,0"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="5,0" stop="5,0"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="6,0" stop="6,0"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="7,0" stop="7,0"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="8,0" stop="8,0"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="9,0" stop="9,0"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="10,0" stop="10,0"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="11,0" stop="11,0"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="12,0" stop="12,0"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="13,0" stop="13,0"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="14,0" stop="14,0"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="15,0" stop="15,0"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="16,0" stop="16,0"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="17,0" stop="17,0"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="18,0" stop="18,0"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="19,0" stop="19,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="19,0" stop="19,0"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="20,0" stop="20,0"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="21,0" stop="21,0"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="22,0" stop="22,0"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="23,0" stop="23,0"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="24,0" stop="24,0"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="25,0" stop="25,0"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="26,0" stop="26,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="26,0" stop="26,0"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,1" stop="0,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="0,1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,1" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="1,1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="2,1" stop="2,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="2,1" stop="2,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="3,1" stop="3,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="4,1" stop="4,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="5,1" stop="5,1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="6,1" stop="6,1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="7,1" stop="7,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="7,1" stop="7,1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="8,1" stop="8,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="8,1" stop="8,1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="9,1" stop="9,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="9,1" stop="9,1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="10,1" stop="10,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="10,1" stop="10,1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="11,1" stop="11,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="11,1" stop="11,1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="12,1" stop="12,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="12,1" stop="12,1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="13,1" stop="13,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="13,1" stop="13,1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="14,1" stop="14,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="14,1" stop="14,1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="15,1" stop="15,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="15,1" stop="15,1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="16,1" stop="16,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="16,1" stop="16,1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="17,1" stop="17,1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="18,1" stop="18,1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="19,1" stop="19,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="19,1" stop="19,1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="20,1" stop="20,1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="21,1" stop="21,1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="22,1" stop="22,1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="23,1" stop="23,1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="24,1" stop="24,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="24,1" stop="24,1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="25,1" stop="25,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="25,1" stop="25,1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="26,1" stop="26,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="26,1" stop="26,1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,2" stop="0,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="0,2" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,2" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="1,2" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="2,2" stop="2,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="2,2" stop="2,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="3,2" stop="3,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="3,2" stop="3,2"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="4,2" stop="4,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="4,2" stop="4,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="4,2" stop="4,2"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="5,2" stop="5,2"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="6,2" stop="6,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="6,2" stop="6,2"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="7,2" stop="7,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="7,2" stop="7,2"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="8,2" stop="8,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="8,2" stop="8,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="8,2" stop="8,2"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="9,2" stop="9,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="9,2" stop="9,2"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="10,2" stop="10,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="10,2" stop="10,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="10,2" stop="10,2"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="11,2" stop="11,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="11,2" stop="11,2"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="12,2" stop="12,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="12,2" stop="12,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="12,2" stop="12,2"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="13,2" stop="13,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="13,2" stop="13,2"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="14,2" stop="14,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="14,2" stop="14,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="14,2" stop="14,2"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="15,2" stop="15,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="15,2" stop="15,2"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="16,2" stop="16,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="16,2" stop="16,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="16,2" stop="16,2"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="17,2" stop="17,2"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="18,2" stop="18,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="18,2" stop="18,2"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="19,2" stop="19,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="19,2" stop="19,2"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="20,2" stop="20,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="20,2" stop="20,2"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="21,2" stop="21,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="21,2" stop="21,2"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="22,2" stop="22,2"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="23,2" stop="23,2"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="24,2" stop="24,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="24,2" stop="24,2"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="25,2" stop="25,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="26,2" stop="26,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,3" stop="0,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="0,3" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,3" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="1,3" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="2,3" stop="2,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="2,3" stop="2,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="3,3" stop="3,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="4,3" stop="4,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="4,3" stop="4,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="6,3" stop="6,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="7,3" stop="7,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="8,3" stop="8,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="8,3" stop="8,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="9,3" stop="9,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="10,3" stop="10,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="10,3" stop="10,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="11,3" stop="11,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="12,3" stop="12,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="12,3" stop="12,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="13,3" stop="13,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="14,3" stop="14,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="14,3" stop="14,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="15,3" stop="15,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="16,3" stop="16,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="16,3" stop="16,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="18,3" stop="18,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="19,3" stop="19,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="20,3" stop="20,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="21,3" stop="21,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="21,3" stop="21,3"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="22,3" stop="22,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="22,3" stop="22,3"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="23,3" stop="23,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="23,3" stop="23,3"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="24,3" stop="24,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="24,3" stop="24,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="24,3" stop="24,3"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="25,3" stop="25,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="25,3" stop="25,3"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="26,3" stop="26,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="26,3" stop="26,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="26,3" stop="26,3"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,4" stop="0,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="0,4" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,4" stop="0,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,4" stop="1,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="1,4" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,4" stop="1,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="2,4" stop="2,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="2,4" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="2,4" stop="2,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="3,4" stop="3,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="3,4" stop="3,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="3,-1" stop="3,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="4,4" stop="4,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="4,4" stop="4,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="4,4" stop="4,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="4,-1" stop="4,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="5,4" stop="5,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="5,-1" stop="5,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="6,4" stop="6,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="6,4" stop="6,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="6,-1" stop="6,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="7,4" stop="7,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="7,4" stop="7,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="7,-1" stop="7,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="8,4" stop="8,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="8,4" stop="8,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="8,4" stop="8,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="8,-1" stop="8,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="9,4" stop="9,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="9,4" stop="9,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="9,-1" stop="9,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="10,4" stop="10,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="10,4" stop="10,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="10,4" stop="10,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="10,-1" stop="10,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="11,4" stop="11,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="11,4" stop="11,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="11,-1" stop="11,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="12,4" stop="12,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="12,4" stop="12,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="12,4" stop="12,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="12,-1" stop="12,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="13,4" stop="13,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="13,4" stop="13,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="13,-1" stop="13,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="14,4" stop="14,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="14,4" stop="14,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="14,4" stop="14,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="14,-1" stop="14,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="15,4" stop="15,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="15,4" stop="15,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="15,-1" stop="15,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="16,4" stop="16,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="16,4" stop="16,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="16,4" stop="16,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="16,-1" stop="16,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="17,4" stop="17,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="17,-1" stop="17,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="18,4" stop="18,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="18,4" stop="18,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="18,-1" stop="18,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="19,4" stop="19,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="19,4" stop="19,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="19,-1" stop="19,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="20,4" stop="20,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="20,4" stop="20,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="20,-1" stop="20,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="21,4" stop="21,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="21,4" stop="21,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="21,-1" stop="21,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="22,4" stop="22,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="22,4" stop="22,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="22,-1" stop="22,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="23,4" stop="23,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="23,4" stop="23,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="23,-1" stop="23,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="24,4" stop="24,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="24,4" stop="24,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="24,4" stop="24,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="24,-1" stop="24,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="25,4" stop="25,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="25,4" stop="25,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="25,-1" stop="25,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="26,4" stop="26,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="26,4" stop="26,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="26,4" stop="26,-1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="26,-1" stop="26,-1"/>
+    </blockTableStyle>
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="DejaVuSerif" fontSize="12.0" leading="15" alignment="CENTER"/>
+    <paraStyle name="P2" fontName="DejaVuSerif" fontSize="9.0" leading="11" alignment="LEFT"/>
+    <paraStyle name="P3" fontName="DejaVuSerif" fontSize="9.0" leading="11"/>
+    <paraStyle name="P4" fontName="DejaVuSerif" fontSize="9.0" leading="11" alignment="CENTER"/>
+    <paraStyle name="P5" fontName="DejaVuSerif-Bold" fontSize="9.0" leading="11" alignment="CENTER"/>
+    <paraStyle name="P6" fontName="DejaVuSerif-Bold" fontSize="10.0" leading="13" alignment="CENTER"/>
+    <paraStyle name="P7" fontName="DejaVuSerif-Bold" fontSize="10.0" leading="13" alignment="CENTER"/>
+    <paraStyle name="P8" fontName="DejaVuSerif" fontSize="7.0" leading="9" alignment="CENTER"/>
+    <paraStyle name="P9" fontName="DejaVuSerif" fontSize="7.0" leading="9" alignment="LEFT"/>
+    <paraStyle name="P10" fontName="DejaVuSerif" fontSize="7.0" leading="9" alignment="RIGHT"/>
+    <paraStyle name="P11" fontName="DejaVuSerif" fontSize="9.0" leading="11" alignment="CENTER" textColor="#000000"/>
+    <paraStyle name="P12" fontName="DejaVuSerif" fontSize="7.0" leading="9" alignment="RIGHT"/>
+    <paraStyle name="P13" fontName="DejaVuSerif-Bold" fontSize="7.0" leading="9" alignment="CENTER"/>
+    <paraStyle name="Standard" fontName="DejaVuSerif" fontSize="10.0" leading="13"/>
+    <paraStyle name="Heading" fontName="DejaVuSans" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Text body" fontName="DejaVuSerif" fontSize="10.0" leading="13" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="DejaVuSerif" fontSize="10.0" leading="13" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Caption" fontName="DejaVuSerif" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="DejaVuSerif" fontSize="10.0" leading="13"/>
+    <paraStyle name="Table Contents" fontName="DejaVuSerif" fontSize="10.0" leading="13"/>
+    <paraStyle name="Table Heading" fontName="DejaVuSerif" fontSize="10.0" leading="13" alignment="CENTER"/>
+    <paraStyle name="Heading 1" fontName="DejaVuSans-Bold" fontSize="115%" leading="NaN" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Frame contents" fontName="DejaVuSerif" fontSize="10.0" leading="13" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Text" fontName="DejaVuSerif" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Bosoo" fontName="DejaVuSans" fontSize="8.0" leading="10"/>
+    <paraStyle name="Table Contents 1" fontName="DejaVuSans" fontSize="7.0" leading="9"/>
+  </stylesheet>
+  <images/>
+  <story>
+    <blockTable colWidths="262.0,262.0,262.0" style="Table1">
+      <tr>
+        <td>
+          <para style="P3">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P3">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P6">Төвлөрсөн мэдээлэл Маягт ДБ-1 </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P4">Үндэсний статистикийн газар батлав. </para>
+          <para style="P4">2003 он. Тушаал No _____</para>
+          <para style="P4">Регистрийн дугаар__<font face="DejaVuSerif">[[ abt_school(data['form']) or '' ]]</font>___ </para>
+          <para style="P4">Аймаг/нийслэл _____<font face="DejaVuSerif">[[ city() or '' ]]</font>____ </para>
+          <para style="P4">Сум/дүүрэг_____<font face="DejaVuSerif">[[ district() ]]</font>_____ </para>
+          <para style="P4">Сургууль_______<font face="DejaVuSerif">[[ school() ]]</font>_____ </para>
+          <para style="P4">Өмчийн хэлбэр ____<font face="DejaVuSerif">[[ title() ]]</font>_____ </para>
+        </td>
+        <td>
+          <para style="P7">СУРАЛЦАГЧИД</para>
+          <para style="P5">(мэргэжил, анги, хүйсээр) </para>
+          <para style="P5">[[ hich_jil(data['form']) ]] оны хичээлийн жил </para>
+          <para style="P5">[[ study_type(data['form']) ]] анги </para>
+        </td>
+        <td>
+          <para style="P2">1. Өмчийн бүх хэлбэрийн их, дээд сургууль, коллежиуд харьяа сургууль нэг бүрээр гаргаж, нэгтгээд <font face="DejaVuSerif">10-р сарын 1-нд</font> БСШУЯ-нд ирүүлнэ.</para>
+          <para style="P2">2. БСШУЯ-нд нэгтгэж <font face="DejaVuSerif">11-р сарын 25-нд</font> ҮСГ-т ирүүлнэ. </para>
+        </td>
+      </tr>
+    </blockTable>
+    <blockTable colWidths="785.0" repeatRows="1" style="Table3">
+      <tr>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="Table Contents">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <blockTable colWidths="44.0,134.0,22.0,24.0,24.0,24.0,24.0,24.0,24.0,24.0,24.0,24.0,24.0,24.0,24.0,24.0,24.0,24.0,24.0,24.0,24.0,24.0,24.0,24.0,24.0,24.0,25.0" style="Table2">
+      <tr>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P10">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P9">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+        	<illustration width="1cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="0" y="0.2cm">Суралцагчдын тоо (ангиар)</drawString>
+			</illustration>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+        	<illustration width="1cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="0" y="0.2cm">Үүнээс:</drawString>
+			</illustration>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+        	<illustration width="1cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="0" y="0.5cm">Суралцаг-</drawString>
+				<drawString x="15" y="0.2cm">чид</drawString>
+			</illustration>
+        </td>
+        <td>
+          <para style="P10">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+        	<illustration width="1cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="2" y="0.1cm">Бэлтгэл</drawString>
+			</illustration>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+        	<illustration width="1cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="15" y="0.1cm">I</drawString>
+			</illustration>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+        	<illustration width="1cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="15" y="0.1cm">II</drawString>
+			</illustration>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          	<illustration width="1cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="15" y="0.1cm">III</drawString>
+			</illustration>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          	<illustration width="1cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="15" y="0.1cm">IV</drawString>
+			</illustration>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          	<illustration width="1cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="15" y="0.1cm">V</drawString>
+			</illustration>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          	<illustration width="1cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="15" y="0.1cm">VI</drawString>
+			</illustration>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          	<illustration width="1cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="0" y="0.1cm">шинээр элссэн</drawString>
+			</illustration>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          	<illustration width="1cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="5" y="0cm">төгсөх</drawString>
+				<drawString x="5" y="-0.3cm">ангид</drawString>
+			</illustration>
+        </td>
+        <td>
+          <para style="P8"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          	<illustration width="1cm" height="0.5cm">
+          		<rotate degrees="90"/>
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="-40" y="-0.6cm">Мэргэжлийн индекс</drawString>
+			</illustration>
+        </td>
+        <td>
+          <para style="P8">Мэргэжлийн нэрс</para>
+        </td>
+        <td>
+          	<illustration width="0.5cm" height="0.5cm">
+          		<rotate degrees="90"/>
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="-40" y="-0.3cm">Боловсролын түвшин</drawString>
+			</illustration>
+        </td>
+        <td>
+          	<illustration width="0.5cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="-3" y="-1cm">бүгд</drawString>
+			</illustration>
+        </td>
+        <td>
+          	<illustration width="0.5cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="0" y="-1cm">эм</drawString>
+			</illustration>
+        </td>
+        <td>
+          <illustration width="0.5cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="-3" y="-1cm">бүгд</drawString>
+			</illustration>
+        </td>
+        <td>
+          	<illustration width="0.5cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="0" y="-1cm">эм</drawString>
+			</illustration>
+        </td>
+        <td>
+          <illustration width="0.5cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="-3" y="-1cm">бүгд</drawString>
+			</illustration>
+        </td>
+        <td>
+          	<illustration width="0.5cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="0" y="-1cm">эм</drawString>
+			</illustration>
+        </td>
+        <td>
+          <illustration width="0.5cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="-3" y="-1cm">бүгд</drawString>
+			</illustration>
+        </td>
+        <td>
+          	<illustration width="0.5cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="0" y="-1cm">эм</drawString>
+			</illustration>
+        </td>
+        <td>
+          <illustration width="0.5cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="-3" y="-1cm">бүгд</drawString>
+			</illustration>
+        </td>
+        <td>
+          	<illustration width="0.5cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="0" y="-1cm">эм</drawString>
+			</illustration>
+        </td>
+        <td>
+          <illustration width="0.5cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="-3" y="-1cm">бүгд</drawString>
+			</illustration>
+        </td>
+        <td>
+          	<illustration width="0.5cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="0" y="-1cm">эм</drawString>
+			</illustration>
+        </td>
+        <td>
+          <illustration width="0.5cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="-3" y="-1cm">бүгд</drawString>
+			</illustration>
+        </td>
+        <td>
+          	<illustration width="0.5cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="0" y="-1cm">эм</drawString>
+			</illustration>
+        </td>
+        <td>
+          <illustration width="0.5cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="-3" y="-1cm">бүгд</drawString>
+			</illustration>
+        </td>
+        <td>
+          	<illustration width="0.5cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="0" y="-1cm">эм</drawString>
+			</illustration>
+        </td>
+        <td>
+          <illustration width="0.5cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="-3" y="-1cm">бүгд</drawString>
+			</illustration>
+        </td>
+        <td>
+          	<illustration width="0.5cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="0" y="-1cm">эм</drawString>
+			</illustration>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <illustration width="0.5cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="0" y="0.2cm">бүгдээс</drawString>
+			</illustration>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+		  <para style="P8">
+            <font color="white"> </font>
+          </para>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+          <para style="P8">
+            <font color="white"> </font>
+          </para>
+          <illustration width="2cm" height="0.5cm">
+          		<rotate degrees="90"/>
+          		<setFont name="DejaVuSans" size="6"/>
+				<drawString x="0" y="-0.1cm">Тухайн жилд 10-р</drawString>
+				<drawString x="0" y="-0.4cm">анги төгсөгчдөөс</drawString>
+		  </illustration>
+        </td>
+        <td>
+          <illustration width="2cm" height="0.5cm">
+          		<rotate degrees="90"/>
+          		<setFont name="DejaVuSans" size="6"/>
+				<drawString x="-45" y="-0.1cm">Бусад хэлбэрийн</drawString>
+				<drawString x="-35" y="-0.4cm">сургуулиас</drawString>
+		  </illustration>
+        </td>
+        <td>
+          <illustration width="2cm" height="0.5cm">
+          		<rotate degrees="90"/>
+          		<setFont name="DejaVuSans" size="6"/>
+				<drawString x="-45" y="-0.3cm">Ажиллагчдаас</drawString>
+		  </illustration>
+        </td>
+        <td>
+          <illustration width="2cm" height="0.5cm">
+          		<rotate degrees="90"/>
+          		<setFont name="DejaVuSans" size="6"/>
+				<drawString x="-45" y="-0.3cm">Ажилгүйчүүдээс</drawString>
+		  </illustration>
+        </td>
+        <td>
+          <illustration width="0.5cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="-3" y="-0.5cm">бүгд</drawString>
+			</illustration>
+        </td>
+        <td>
+          	<illustration width="0.5cm" height="0.5cm">
+          		<setFont name="DejaVuSans" size="7"/>
+				<drawString x="0" y="-0.5cm">эм</drawString>
+			</illustration>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P11">
+            <font face="DejaVuSerif">[[ repeatIn(lines(data['form']), 'l') ]]</font>
+            <font face="DejaVuSerif" size="7.0">[[ l['index'] ]]</font>
+          </para>
+        </td>
+        <td>
+          <para style="P8">[[ l['name'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ l['degree'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ l['all'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ l['female'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ l['grp_0']['all'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ l['grp_0']['female'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ l['grp_1']['all'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ l['grp_1']['female'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ l['grp_2']['all'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ l['grp_2']['female'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ l['grp_3']['all'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ l['grp_3']['female'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ l['grp_4']['all'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ l['grp_4']['female'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ l['grp_5']['all'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ l['grp_5']['female'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ l['grp_6']['all'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ l['grp_6']['female'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ l['adm_all'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ l['adm_female'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ l['adm_k12'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ l['adm_other'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ l['adm_worker'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ l['adm_non-worker'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ l['graduate'] ]]</para>
+        </td>
+        <td>
+          <para style="P8">[[ l['grad_female'] ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P13">Нийт дүн</para>
+        </td>
+        <td>
+          <para style="P8"></para>
+        </td>
+        <td>
+          <para style="P8"></para>
+        </td>
+        <td>
+          <para style="P13">[[ sum_all() ]]</para>
+        </td>
+        <td>
+          <para style="P13">[[ sum_female() ]]</para>
+        </td>
+        <td>
+          <para style="P8"></para>
+        </td>
+        <td>
+          <para style="P8"></para>
+        </td>
+        <td>
+          <para style="P8"></para>
+        </td>
+        <td>
+          <para style="P8"></para>
+        </td>
+        <td>
+          <para style="P8"></para>
+        </td>
+        <td>
+          <para style="P8"></para>
+        </td>
+        <td>
+          <para style="P8"></para>
+        </td>
+        <td>
+          <para style="P8"></para>
+        </td>
+        <td>
+          <para style="P8"></para>
+        </td>
+        <td>
+          <para style="P8"></para>
+        </td>
+        <td>
+          <para style="P8"></para>
+        </td>
+        <td>
+          <para style="P8"></para>
+        </td>
+        <td>
+          <para style="P8"></para>
+        </td>
+        <td>
+          <para style="P8"></para>
+        </td>
+        <td>
+          <para style="P8"></para>
+        </td>
+        <td>
+          <para style="P8"></para>
+        </td>
+        <td>
+          <para style="P8"></para>
+        </td>
+        <td>
+          <para style="P8"></para>
+        </td>
+        <td>
+          <para style="P8"></para>
+        </td>
+        <td>
+          <para style="P8"></para>
+        </td>
+        <td>
+          <para style="P8"></para>
+        </td>
+        <td>
+          <para style="P8"></para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    <para style="P13">Мэдээг хянасан:<font color="white"> .........</font><font color="white"> .........</font><font color="white"> .........</font><font color="white"> .........</font><font color="white"> .........</font><font color="white"> .........</font><font color="white"> .........</font><font color="white"> .........</font><font color="white"> .........</font><font color="white"> .........</font><font color="white"> .........</font><font color="white"> .........</font><font color="white"> .........</font>(Байгууллагын дарга / захирал /-ын нэр, гарын үсэг, тэмдэг дарах)</para>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    <para style="P1">
+        <font face="DejaVuSerif" size="9.0">[[ time.strftime('%Y') ]] оны [[ time.strftime('%m') ]]-р сарын [[ time.strftime('%d') ]]-ны өдөр</font>
+    </para>
+  </story>
+</document>
+

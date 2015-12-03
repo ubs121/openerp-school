@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <!-- Sequences for school.student --> 
+        <record id="seq_type_school_student" model="ir.sequence.type">
+            <field name="name">Student Code</field>
+            <field name="code">school.student</field>
+        </record>
+        <record id="seq_school_student" model="ir.sequence">
+            <field name="name">Student Code</field>
+            <field name="code">school.student</field>
+            <field name="prefix">SW</field>
+            <field name="padding">4</field>
+        </record>
+		<!-- Sequences for student.definition --> 
+        <record id="seq_type_student_definition" model="ir.sequence.type">
+            <field name="name">Student Def Seq</field>
+            <field name="code">student.definition</field>
+        </record>
+        <record id="seq_student_definition" model="ir.sequence">
+            <field name="name">Student Def Seq</field>
+            <field name="code">student.definition</field>
+            <field name="prefix"></field>
+            <field name="padding">4</field>
+        </record>
+		<!-- Sequences for grade.definition --> 
+        <record id="seq_type_grade_definition" model="ir.sequence.type">
+            <field name="name">Grade Def Seq</field>
+            <field name="code">grade.definition</field>
+        </record>
+        <record id="seq_grade_definition" model="ir.sequence">
+            <field name="name">Grade Def Seq</field>
+            <field name="code">grade.definition</field>
+            <field name="prefix"></field>
+            <field name="padding">4</field>
+        </record>
+    </data>
+</openerp>

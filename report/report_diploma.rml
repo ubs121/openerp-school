@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<document filename="diploma.pdf">
+  <template pageSize="(21cm,29.7cm)" title="Diploma" author="ubs121" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="28.0" y1="28.0" width="539" height="786"/>
+      <pageGraphics>
+        <image file="addons/school/report/bc_logo_small.jpg" x="20" y="770" width="2cm" height="2cm"/>
+        <image file="addons/school/report/bc_script_vert.jpg" x="0.5cm" y="1cm" width="0.5cm" height="24cm"/>
+        <image file="addons/school/report/bc_script_vert.jpg" x="20cm" y="1cm" width="0.5cm" height="24cm"/>
+      </pageGraphics>
+     </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table1">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table2">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table121">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table7">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="DejaVuSerif-Roman" alignment="CENTER"/>
+    <paraStyle name="P2" fontName="DejaVuSerif-Roman" fontSize="9.0" leading="11"/>
+    <paraStyle name="P3" fontName="DejaVuSerif-Roman" fontSize="8.0" leading="5"/>
+    <paraStyle name="P4" fontName="DejaVuSerif-Roman" fontSize="8.0" leading="5" alignment="LEFT"/>
+    <paraStyle name="P5" fontName="DejaVuSerif-Roman" fontSize="8.0" leading="10" alignment="RIGHT"/>
+    <paraStyle name="P6" fontName="DejaVuSerif-Roman" fontSize="8.0" leading="10"/>
+    <paraStyle name="P7" fontName="DejaVuSerif-Roman" fontSize="8.0" leading="10" alignment="RIGHT"/>
+    <paraStyle name="P8" fontName="DejaVuSerif-Roman" fontSize="11.0" leading="14" alignment="CENTER"/>
+    <paraStyle name="P9" fontName="DejaVuSerif-Roman" fontSize="7.0" leading="5"/>
+    <paraStyle name="P10" fontName="DejaVuSerif-Roman" fontSize="8.0" leading="5" alignment="CENTER"/>
+    <paraStyle name="P11" fontName="DejaVuSerif-Roman" fontSize="8.0" leading="5" alignment="LEFT"/>
+    <paraStyle name="P121" fontName="DejaVuSerif-Roman" fontSize="8.0" leading="10" alignment="LEFT"/>
+    <paraStyle name="P12" rightIndent="-64.0" leftIndent="0.0" fontName="DejaVuSerif-Roman" fontSize="8.0" leading="10"/>
+    <paraStyle name="P13" fontName="DejaVuSerif-Roman" fontSize="8.0" leading="10" alignment="CENTER"/>
+    <paraStyle name="P14" fontName="DejaVuSerif-Roman" fontSize="10.0" leading="8" alignment="LEFT"/>
+    <paraStyle name="P15" fontName="DejaVuSerif-Roman" fontSize="8.0" leading="10"/>
+    <paraStyle name="P16" fontName="DejaVuSerif-Roman" fontSize="8.0" leading="10"/>
+    <paraStyle name="P17" fontName="DejaVuSerif-Roman" fontSize="8.0" leading="10" alignment="LEFT"/>
+    <paraStyle name="P18" fontName="DejaVuSerif-Roman" alignment="CENTER"/>
+    <paraStyle name="P19" rightIndent="-64.0" leftIndent="0.0" fontName="DejaVuSerif-Roman" fontSize="8.0" leading="10"/>
+    <paraStyle name="P20" fontName="DejaVuSerif-Roman" fontSize="8.0" leading="10"/>
+    <paraStyle name="P21" fontName="DejaVuSerif-Roman" alignment="CENTER"/>
+    <paraStyle name="Standard" fontName="DejaVuSerif-Roman"/>
+    <paraStyle name="Heading" fontName="DejaVuSans" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Text body" fontName="DejaVuSerif-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="DejaVuSerif-Roman" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Caption" fontName="DejaVuSerif-Roman" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="DejaVuSerif-Roman"/>
+    <paraStyle name="Table Contents" fontName="DejaVuSerif-Roman"/>
+    <paraStyle name="Table Heading" fontName="DejaVuSerif-Roman" alignment="CENTER"/>
+    <paraStyle name="Footer" fontName="DejaVuSerif-Roman" alignment="CENTER"/>
+  </stylesheet>
+  <story>
+    <section>
+    [[repeatIn(objects, 'std')]]
+    <para style="P1">БОЛОВСРОЛ, СОЁЛ, ШИНЖЛЭХ УХААНЫ ЯАМНЫ ХАРЪЯА</para>
+    <para style="P1">О.ТЛЕЙХАНЫ НЭРЭМЖИТ БАРИЛГЫН КОЛЛЕЖ</para>
+    <para style="P7">[[ std.diploma[0].no if len(std.diploma)>0 else 'XXX']] дипломын хамт хүчинтэй</para>
+    <blockTable colWidths="539.0" style="Table1">
+      <tr>
+        <td>
+          <para style="P8">[[ std.curr_id.name ]] ([[std.curr_id.prof_id.index]]) мэргэжлээр төгссөн</para>
+          <para style="P8">[[std.first_name]] овогтой [[std.name]]</para>
+          <para style="P8">БАКАЛАВРЫН ЗЭРГИЙН [[ std.diploma[0].no if len(std.diploma)>0 else 'XXX' ]] тоот ДИПЛОМЫН ХАВСРАЛТ</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P1">Бүртгэлийн дугаар:[[ std.diploma[0].reg if len(std.diploma)>0 else 'XXX' ]]</para>
+    <blockTable colWidths="99.0,396.0" style="Table2">
+      <tr>
+        <td><para style="P11">Регистрийн дугаар:</para></td><td><para style="P9">[[ std.regid ]]</para></td>
+      </tr>
+      <tr>
+        <td><para style="P11">Суралцсан хугацаа:</para></td>
+        <td><para style="P9">2005-2009</para></td>
+      </tr>
+    </blockTable>
+     <blockTable colWidths="495" style="Table121">
+      <tr>
+        <td><para style="P121">Дипломын төслийг "[[ std.diploma[0].thesis if len(std.diploma)>0 else 'XXX' ]]" сэдвээр "[[ std.diploma[0].mark if len(std.diploma)>0 else 'XXX' ]] ([[ std.diploma[0].point if len(std.diploma)>0 else 'XXX' ]])" үнэлгээтэй хамгаалсан болно.</para></td>
+      </tr>
+    </blockTable>
+    <para style="P2">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="10,190,20,50,10,190,20,20">
+      <tr>
+        <td>[[ repeatIn(get_grid(std),'g') ]]<para style="P10">[[ g['no'] ]]</para></td>
+        <td><para style="P9">[[ g['name'] ]]</para></td>
+        <td><para style="P9">[[ g['credit'] ]]</para></td>
+        <td><para style="P9">[[ g['mark'] ]]</para></td>
+        <td><para style="P10">[[ g['no1'] ]]</para></td>
+        <td><para style="P9">[[ g['name1'] ]]</para></td>
+        <td><para style="P9">[[ g['credit1'] ]]</para></td>
+        <td><para style="P9">[[ g['mark1'] ]]</para></td>
+      </tr>
+    </blockTable>
+    <para style="P2">
+      <font color="white"> </font>
+    </para>
+    
+    <illustration width="15cm" height="1cm">
+            <setFont name="DejaVuSerif-Roman" size="8"/>
+            <drawString x="10cm" y="0">[[ std.diploma[0].reg_date if len(std.diploma)>0 else 'XXX' ]] Улаанбаатар хот, Монгол Улс.</drawString>
+    </illustration>
+    <pageBreak/>
+    
+    <para style="P1">THE CONSTRUCTION COLLEGE NAMED AFTER O.TLEIKHAN</para>
+    <para style="P1">BELONGING TO THE MINISTRY OF EDUCATION, CULTURE AND SCIENCE</para>
+    <para style="P7">The appendix is valid with diploma [[ std.diploma[0].no if len(std.diploma)>0 else 'XXX' ]]</para>
+    <blockTable colWidths="539.0" style="Table1">
+      <tr>
+        <td>
+          <para style="P8">Appendix to Bachelor's degree diploma No [[ std.diploma[0].no if len(std.diploma)>0 else 'XXX']] of [[ name2eng(std.first_name) ]] [[ name2eng(std.name) ]]</para>
+          <para style="P8">who graduated from the College as a profession of</para>
+          <para style="P8">[[ std.curr_id.name_en ]] in 2009</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P1">Registration No:[[ std.diploma[0].reg if len(std.diploma)>0 else 'XXX' ]]</para>
+    <blockTable colWidths="120.0,376.0" style="Table2">
+      <tr>
+        <td><para style="P11">Social Number:</para></td><td><para style="P9">[[ std.regid ]]</para></td>
+      </tr>
+      <tr>
+        <td><para style="P11">Entered and Graduated:</para></td>
+        <td><para style="P9">2005-2009</para></td>
+      </tr>
+    </blockTable>
+    <blockTable colWidths="495" style="Table121">
+      <tr>
+        <td><para style="P121">Defended [[ get_his_or_her(std) ]] diploma degree on the topic "[[ std.diploma[0].thesis_en if len(std.diploma)>0 else 'XXX' ]]" with grade "[[ std.diploma[0].mark if len(std.diploma)>0 else 'XXX' ]]([[ std.diploma[0].point if len(std.diploma)>0 else 'XXX' ]])".</para></td>
+      </tr>
+    </blockTable>
+    <para style="P2">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="10,190,20,50,10,190,20,20">
+      <tr>
+        <td>[[ repeatIn(get_grid(std, 'en'),'e') ]]<para style="P10">[[ e['no'] ]]</para></td>
+        <td><para style="P9">[[ e['name'] ]]</para></td>
+        <td><para style="P9">[[ e['credit'] ]]</para></td>
+        <td><para style="P9">[[ e['mark'] ]]</para></td>
+        <td><para style="P10">[[ e['no1'] ]]</para></td>
+        <td><para style="P9">[[ e['name1'] ]]</para></td>
+        <td><para style="P9">[[ e['credit1'] ]]</para></td>
+        <td><para style="P9">[[ e['mark1'] ]]</para></td>
+      </tr>
+    </blockTable>
+    <para style="P2">
+      <font color="white"></font>
+    </para>
+    <illustration width="15cm" height="1cm">
+            <setFont name="DejaVuSerif-Roman" size="8"/>
+            <drawString x="10cm" y="0">[[ std.diploma[0].reg_date if len(std.diploma)>0 else 'XXX' ]] Ulaanbaatar, Mongolia.</drawString>
+    </illustration>
+    </section>
+  </story>
+</document>
+

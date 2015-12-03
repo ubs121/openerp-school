@@ -1,0 +1,223 @@
+<?xml version="1.0"?>
+<document filename="test.pdf">
+  <template pageSize="(595.0,842.0)" title="Test" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="28.0" y1="28.0" width="539" height="786"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table1">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table2">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,0" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,0" stop="0,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,0" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,0" stop="1,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="2,0" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="2,0" stop="2,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="3,0" stop="3,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="3,0" stop="3,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="3,-1" stop="3,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="4,0" stop="4,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="4,0" stop="4,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="4,-1" stop="4,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="5,0" stop="5,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="5,0" stop="5,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="5,-1" stop="5,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="6,0" stop="6,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="6,0" stop="6,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="6,0" stop="6,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="6,-1" stop="6,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,1" stop="0,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,1" stop="0,1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="0,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="1,1" stop="1,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="1,1" stop="1,1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="1,-1" stop="1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="2,1" stop="2,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="2,1" stop="2,1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="2,-1" stop="2,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="3,1" stop="3,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="3,1" stop="3,1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="3,-1" stop="3,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="4,1" stop="4,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="4,1" stop="4,1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="4,-1" stop="4,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="5,1" stop="5,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="5,1" stop="5,1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="5,-1" stop="5,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="6,1" stop="6,-1"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="6,1" stop="6,-1"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="6,1" stop="6,1"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="6,-1" stop="6,-1"/>
+    </blockTableStyle>
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="DejaVuSerif-Roman" fontSize="9.0" leading="11" alignment="LEFT"/>
+    <paraStyle name="P2" fontName="DejaVuSerif-Roman" fontSize="12.0" leading="15" alignment="CENTER"/>
+    <paraStyle name="P3" fontName="DejaVuSerif-Roman" fontSize="12.0" leading="15" alignment="RIGHT"/>
+    <paraStyle name="P4" fontName="DejaVuSerif-Roman" fontSize="9.0" leading="11" alignment="LEFT"/>
+    <paraStyle name="P5" fontName="DejaVuSerif-Roman" fontSize="9.0" leading="11" alignment="CENTER"/>
+    <paraStyle name="P6" fontName="DejaVuSerif-Roman" fontSize="10.0" leading="13" alignment="CENTER"/>
+    <paraStyle name="P7" fontName="DejaVuSerif-Roman" fontSize="9.0" leading="11" alignment="CENTER" textColor="#000000"/>
+    <paraStyle name="P8" fontName="DejaVuSerif-Roman" fontSize="14.0" leading="17" alignment="CENTER" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Standard" fontName="DejaVuSerif-Roman" fontSize="10.0" leading="13"/>
+    <paraStyle name="Heading" fontName="DejaVuSans" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Text body" fontName="DejaVuSerif-Roman" fontSize="10.0" leading="13" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="DejaVuSerif-Roman" fontSize="10.0" leading="13" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Caption" fontName="DejaVuSerif-Roman" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="DejaVuSerif-Roman" fontSize="10.0" leading="13"/>
+    <paraStyle name="Table Contents" fontName="DejaVuSerif-Roman" fontSize="10.0" leading="13"/>
+    <paraStyle name="Table Heading" fontName="DejaVuSerif-Roman" fontSize="10.0" leading="13" alignment="CENTER"/>
+    <paraStyle name="Heading 1" fontName="DejaVuSans-Bold" fontSize="115%" leading="NaN" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Frame contents" fontName="DejaVuSerif-Roman" fontSize="10.0" leading="13" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Text" fontName="DejaVuSerif-Roman" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Bosoo" fontName="DejaVuSans" fontSize="8.0" leading="10"/>
+    <paraStyle name="Table Contents 1" fontName="DejaVuSans" fontSize="7.0" leading="9"/>
+  </stylesheet>
+  <images/>
+  <story>
+  <para style="P8">Журнал</para>
+  <section>
+    [[repeatIn(objects, 'gbook')]]
+    <blockTable colWidths="118.0,421.0" style="Table1">
+      <tr>
+        <td>
+          <para style="P4">Семестр:</para>
+        </td>
+        <td>
+          <para style="P1">[[ gbook.term_id.name ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P4">Журналын нэр:</para>
+        </td>
+        <td>
+          <para style="P1">[[ gbook.name ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P4">Журналын төрөл:</para>
+        </td>
+        <td>
+          <para style="P1">[[ 'Энгийн' if gbook.type=='normal' else 'Шалгалтын' ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P4">Анги / Бүлэг:</para>
+        </td>
+        <td>
+          <para style="P1">[[ gbook.std_grp.name ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P4">Хичээл:</para>
+        </td>
+        <td>
+          <para style="P1">[[ gbook.sub_id.name ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P4">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P1">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P4">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P1">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <blockTable colWidths="25.0,155.0,72.0,72.0,72.0,97.0,46.0" style="Table2">
+      <tr>
+        <td>
+          <para style="P6">ДД</para>
+        </td>
+        <td>
+          <para style="P6">Оюутны нэр</para>
+        </td>
+        <td>
+          <para style="P6">Оноо 1</para>
+        </td>
+        <td>
+          <para style="P6">Оноо 2</para>
+        </td>
+        <td>
+          <para style="P6">Оноо 3</para>
+        </td>
+        <td>
+          <para style="P6">Эцсийн дүн</para>
+        </td>
+        <td>
+          <para style="P6">Үнэлгээ</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P5">[[ repeatIn(lines(gbook), 'l') ]]</para>
+          <para style="P7">[[ l['dd'] ]]</para>
+        </td>
+        <td>
+          <para style="P6">[[ l['std_name'] ]]</para>
+        </td>
+        <td>
+          <para style="P6">[[ l['p1'] ]]</para>
+        </td>
+        <td>
+          <para style="P6">[[ l['p2'] ]]</para>
+        </td>
+        <td>
+          <para style="P6">[[ l['p3'] ]]</para>
+        </td>
+        <td>
+          <para style="P6">[[ l['point'] ]]</para>
+        </td>
+        <td>
+          <para style="P6">[[ l['mark'] ]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P2">
+      <font face="DejaVuSerif-Roman">
+        <font face="DejaVuSerif-Roman" size="9.0"/>
+      </font>
+    </para>
+    </section>
+    <para style="P3">
+      <font face="DejaVuSerif-Roman">
+        <font face="DejaVuSerif-Roman" size="9.0">[[ time.strftime('%Y-%m-%d') ]]</font>
+      </font>
+    </para>
+  </story>
+</document>
+

@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+		<!-- Багш -->
+		<record id="view_school_teacher_form" model="ir.ui.view">
+			<field name="name">Багш</field>
+			<field name="model">hr.employee</field>
+			<field name="type">form</field>
+			<field name="priority">1</field>
+			<field name="arch" type="xml">
+				<form string="Багш">
+					<group colspan="4" col="4">
+						<field name="name" select="1" string="Нэр" />
+						<field name="active" select="1" />
+						<field name="company_id" string="Сургууль" />
+						<field name="department_id" string="Тэнхим" />
+						<field name="job_id" string="Ажлын байр" />
+						<field name="user_id" />
+					</group>
+					<notebook colspan="4">
+						<page string="Хувийн Мэдээлэл">
+							<group col="4" colspan="4">
+								<separator colspan="4" string="Иргэний мэдээлэл" />
+								<field name="ssnid" string="Регистр" />
+								<field name="otherid" string="Бусад баримт" />
+								<field name="gender" string="Хүйс" />
+								<field name="marital" string="Гэрлэлт" />
+								<field name="birthday" string="Төрсөн огноо" />
+							</group>
+							<group col="2" colspan="2">
+								<separator string="Хаяг" colspan="2" />
+								<field name="address_home_id" colspan="2" string="Гэрийн хаяг" />
+								<field name="address_id" colspan="2" string="Ажлын хаяг" />
+								<field name="work_phone" string="Ажлын утас" />
+								<field name="work_email" widget="email" string="Ажлын и-мэйл" />
+								<field name="work_location" string="Ажлын байр" />
+							</group>
+							<group col="2" colspan="2">
+								<separator colspan="2" string="Ажилтан" />
+								<field name="profession" />
+								<field name="degree" />
+								<field name="rank" />
+								<field name="joined" />
+								<field name="worked" />
+							</group>
+						</page>
+						<!-- Заах хичээлүүдийг харуулах -->
+						<page string="Сургалт">
+							<field colspan="4" nolabel="1" name="notes" />
+						</page>
+						<page string="Тэмдэглэл">
+							<field colspan="4" nolabel="1" name="notes" />
+						</page>
+					</notebook>
+				</form>
+			</field>
+		</record>
+
+		<record id="view_school_teacher_tree" model="ir.ui.view">
+			<field name="name">Багш нар</field>
+			<field name="model">hr.employee</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Багш нар">
+					<field name="name" />
+					<!-- <field name="category_id" /> -->
+					<field name="degree" />
+					<field name="work_email" widget="email" />
+				</tree>
+			</field>
+		</record>
+		<record id="open_school_teacher" model="ir.actions.act_window">
+			<field name="name">Багш</field>
+			<field name="res_model">hr.employee</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_id" ref="view_school_teacher_tree" />
+		</record>
+
+		<menuitem id="menu_school_teacher" name="Багш" action="open_school_teacher"
+			parent="menu_school" sequence="5" />
+
+		<!-- Сургалт/Багшийн заасан цагийн бүртгэл -->
+		<record id="view_school_teacher_consummation_form" model="ir.ui.view">
+			<field name="name">Багшийн заасан цагийн бүртгэл</field>
+			<field name="model">school.teacher.consummation</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Заасан цагийн бүртгэл">
+					<separator colspan="4" />
+					<field name="date" />
+					<separator colspan="4" />
+					<field name="subject" />
+					<field name="name" />
+					<separator colspan="4" />
+					<field name="sub_type" />
+					<field name="time" />
+					<separator colspan="4" />
+					<field name="teacher" />
+				</form>
+			</field>
+		</record>
+		<record id="view_school_teacher_consummation_tree" model="ir.ui.view">
+			<field name="name">Багшийн заасан цагийн бүртгэл</field>
+			<field name="model">school.teacher.consummation</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Заасан цагийн бүртгэл">
+					<field name="date" select="1" />
+					<field name="subject" select="1" />
+					<field name="name" />
+					<field name="sub_type" />
+					<field name="time" />
+					<field name="teacher" select="1" />
+				</tree>
+			</field>
+		</record>
+		<record id="open_school_teacher_consummation" model="ir.actions.act_window">
+			<field name="name">Багшийн заасан цагийн бүртгэл</field>
+			<field name="res_model">school.teacher.consummation</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		<menuitem id="menu_school_teacher_consummation" name="Цагийн бүртгэл"
+			action="open_school_teacher_consummation" parent="menu_school_teacher" />
+
+		<!-- Багшийн цагийн тооцооны тайлан -->
+		<report id="teacher_time" string="Цагийн тооцооны тайлан"
+			model="hr.employee" name="teacher_time" header="False"
+			rml="school/report/report_teacher_time.rml" menu="False" />
+		<wizard id="wizard_teacher_time" keyword="client_print_multi"
+			model="hr.employee" name="teacher_time.report" string="Цагийн тооцоо" />
+	</data>
+</openerp>

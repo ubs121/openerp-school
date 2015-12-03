@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+		<!-- Хичээлийн жил -->		
+		<record id="sy2007_2008" model="school.year">
+			<field name="name">2007-2008</field>
+			<field name="date_start">2007-09-01</field>
+            <field name="date_stop">2008-06-01</field>
+            <field name="school_id" ref="base.main_company"/>
+		</record>
+		<record id="sy2008_2009" model="school.year">
+			<field name="name">2008-2009</field>
+			<field name="date_start">2008-09-01</field>
+            <field name="date_stop">2009-06-01</field>
+            <field name="school_id" ref="base.main_company"/>
+		</record>
+		<record id="sy2009_2010" model="school.year">
+			<field name="name">2009-2010</field>
+			<field name="date_start">2009-09-01</field>
+            <field name="date_stop">2010-09-01</field>
+            <field name="school_id" ref="base.main_company"/>
+		</record>
+		<record id="sy2010_2011" model="school.year">
+			<field name="name">2010-2011</field>
+			<field name="date_start">2010-09-01</field>
+            <field name="date_stop">2011-09-01</field>
+            <field name="school_id" ref="base.main_company"/>
+		</record>
+		
+		<!-- Семестер -->		
+		<record id="term2007fall" model="school.term">
+			<field name="name">2007 намар</field>
+			<field name="date_start">2007-09-01</field>
+            <field name="date_stop">2007-12-31</field>
+			<field name="year_id" ref="sy2007_2008"/>
+		</record>
+		<record id="term2008spring" model="school.term">
+			<field name="name">2008 хавар</field>
+			<field name="date_start">2008-01-01</field>
+            <field name="date_stop">2008-06-01</field>
+			<field name="year_id" ref="sy2007_2008"/>
+		</record>
+		<record id="term2008fall" model="school.term">
+			<field name="name">2008 намар</field>
+			<field name="date_start">2008-09-01</field>
+            <field name="date_stop">2008-12-31</field>
+			<field name="year_id" ref="sy2008_2009"/>
+		</record>
+		<record id="term2009spring" model="school.term">
+			<field name="name">2009 хавар</field>
+			<field name="date_start">2009-01-01</field>
+            <field name="date_stop">2009-06-01</field>
+			<field name="year_id" ref="sy2008_2009"/>
+		</record>
+		<record id="term2009fall" model="school.term">
+			<field name="name">2009 намар</field>
+			<field name="date_start">2009-09-01</field>
+            <field name="date_stop">2009-12-31</field>
+			<field name="year_id" ref="sy2009_2010"/>
+		</record>
+		<record id="term2010spring" model="school.term">
+			<field name="name">2010 хавар</field>
+			<field name="date_start">2010-01-01</field>
+            <field name="date_stop">2010-09-01</field>
+			<field name="year_id" ref="sy2009_2010"/>
+		</record>
+		<record id="term2010fall" model="school.term">
+			<field name="name">2010 намар</field>
+			<field name="date_start">2010-09-01</field>
+            <field name="date_stop">2010-12-31</field>
+			<field name="year_id" ref="sy2010_2011"/>
+		</record>
+		<record id="term2011spring" model="school.term">
+			<field name="name">2011 хавар</field>
+			<field name="date_start">2011-01-01</field>
+            <field name="date_stop">2011-09-01</field>
+			<field name="year_id" ref="sy2010_2011"/>
+		</record>
+		
+		
+		<!-- Үнэлгээний тохиргоо -->
+		<record id="mark_f" model="school.mark">
+			<field name="letter">F</field>
+			<field name="gpa">0.0</field>
+			<field name="lo_percent">0</field>
+			<field name="hi_percent">59</field>
+		</record>
+		<record id="mark_d_minus" model="school.mark">
+			<field name="letter">D-</field>
+			<field name="gpa">0.7</field>
+			<field name="lo_percent">60</field>
+			<field name="hi_percent">63</field>
+		</record>
+		<record id="mark_d" model="school.mark">
+			<field name="letter">D</field>
+			<field name="gpa">1.0</field>
+			<field name="lo_percent">64</field>
+			<field name="hi_percent">67</field>
+		</record>
+		<record id="mark_d_plus" model="school.mark">
+			<field name="letter">D+</field>
+			<field name="gpa">1.4</field>
+			<field name="lo_percent">68</field>
+			<field name="hi_percent">69</field>
+		</record>
+		<record id="mark_c_minus" model="school.mark">
+			<field name="letter">C-</field>
+			<field name="gpa">1.7</field>
+			<field name="lo_percent">70</field>
+			<field name="hi_percent">73</field>
+		</record>
+		<record id="mark_c" model="school.mark">
+			<field name="letter">C</field>
+			<field name="gpa">2.0</field>
+			<field name="lo_percent">74</field>
+			<field name="hi_percent">77</field>
+		</record>
+		<record id="mark_c_plus" model="school.mark">
+			<field name="letter">C+</field>
+			<field name="gpa">2.4</field>
+			<field name="lo_percent">78</field>
+			<field name="hi_percent">79</field>
+		</record>
+		<record id="mark_b_minus" model="school.mark">
+			<field name="letter">B-</field>
+			<field name="gpa">2.7</field>
+			<field name="lo_percent">80</field>
+			<field name="hi_percent">83</field>
+		</record>
+		<record id="mark_b" model="school.mark">
+			<field name="letter">B</field>
+			<field name="gpa">3.0</field>
+			<field name="lo_percent">84</field>
+			<field name="hi_percent">87</field>
+		</record>
+		<record id="mark_b_plus" model="school.mark">
+			<field name="letter">B+</field>
+			<field name="gpa">3.4</field>
+			<field name="lo_percent">88</field>
+			<field name="hi_percent">89</field>
+		</record>
+		<record id="mark_a_minus" model="school.mark">
+			<field name="letter">A-</field>
+			<field name="gpa">3.7</field>
+			<field name="lo_percent">90</field>
+			<field name="hi_percent">95</field>
+		</record>
+		<record id="mark_a" model="school.mark">
+			<field name="letter">A</field>
+			<field name="gpa">4.0</field>
+			<field name="lo_percent">96</field>
+			<field name="hi_percent">100</field>
+		</record>		
+	</data>
+</openerp>

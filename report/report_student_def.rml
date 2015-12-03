@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<document filename="test.pdf">
+  <template pageSize="(595.0,842.0)" title="Test" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="28.0" y1="28.0" width="539" height="786"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table1">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table2">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="DejaVuSerif" fontSize="12.0" leading="15" alignment="CENTER"/>
+    <paraStyle name="P2" fontName="DejaVuSerif" fontSize="12.0" leading="15" alignment="LEFT"/>
+    <paraStyle name="P3" fontName="DejaVuSerif-Bold" fontSize="16.0" leading="20" alignment="CENTER"/>
+    <paraStyle name="P4" fontName="DejaVuSans" fontSize="8.0" leading="10" alignment="LEFT"/>
+    <paraStyle name="P5" fontName="DejaVuSerif" fontSize="10.0" leading="13" alignment="LEFT"/>
+    <paraStyle name="P6" fontName="DejaVuSerif" fontSize="12.0" leading="15" alignment="CENTER"/>
+    <paraStyle name="P7" fontName="DejaVuSerif" fontSize="12.0" leading="15" alignment="LEFT"/>
+    <paraStyle name="Standard" fontName="DejaVuSerif" fontSize="10.0" leading="13"/>
+    <paraStyle name="Heading" fontName="DejaVuSans" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Text body" fontName="DejaVuSerif" fontSize="10.0" leading="13" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="DejaVuSerif" fontSize="10.0" leading="13" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Caption" fontName="DejaVuSerif" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="DejaVuSerif" fontSize="10.0" leading="13"/>
+    <paraStyle name="Table Contents" fontName="DejaVuSerif" fontSize="10.0" leading="13"/>
+    <paraStyle name="Table Heading" fontName="DejaVuSerif" fontSize="10.0" leading="13" alignment="CENTER"/>
+    <paraStyle name="Heading 1" fontName="DejaVuSans-Bold" fontSize="115%" leading="NaN" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Frame contents" fontName="DejaVuSerif" fontSize="10.0" leading="13" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Text" fontName="DejaVuSerif" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Bosoo" fontName="DejaVuSans" fontSize="8.0" leading="10"/>
+    <paraStyle name="Table Contents 1" fontName="DejaVuSans" fontSize="7.0" leading="9"/>
+  </stylesheet>
+  <images/>
+  <story>
+    <para style="P4">
+      <font color="white"> </font>
+    </para>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    <para style="P1">
+      <font color="white"> </font>
+    </para>
+    <blockTable colWidths="180.0,180.0,180.0" style="Table1">
+      <tr>
+        <td>
+          <para style="P1">
+            <font face="DejaVuSerif">[[ ognoo(data['form']) ]]</font>
+            <font color="white"> .........</font>
+          </para>
+        </td>
+        <td>
+          <para style="P1">№ <font face="DejaVuSerif">[[ seq_number() ]] </font></para>
+        </td>
+        <td>
+          <para style="P1">Улаанбаатар хот</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P1">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P1">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P1">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P1">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P1">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P1">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P1">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P1">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P1">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P1">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P3">Тодорхойлолт</para>
+        </td>
+        <td>
+          <para style="P1">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P1">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P3">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P1">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P1">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P3">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P1">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P2"><font face="DejaVuSerif">[[ ovog() ]] [[ ner() ]] нь [[ year(data['form']) ]] оны хичээлийн жилд [[ school_name() ]] - н [[ group() ]] ангид суралцаж байгаа нь үнэн болно.</font></para>
+    <blockTable colWidths="539.0" style="Table2">
+      <tr>
+        <td>
+          <para style="P5">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P5">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P5">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P5">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P5">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P5">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P5">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P5">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P5">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P5">
+            <font color="white"> </font>
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P6">[[ school_name() ]] - н захирал .................................................. </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+    <para style="P7">
+      <font color="white"> </font>
+    </para>
+    <para style="P6">
+      <font color="white"> </font>
+    </para>
+  </story>
+</document>
+

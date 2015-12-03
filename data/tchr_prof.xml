@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<openerp>
+	<data noupdate="1">
+		<!-- Мэргэжлийн чиглэл -->
+		<record id="prof_teach" model="school.profession">
+            <field name="name">Багш, боловсрол судлал</field>
+        </record>
+		<record id="prof_art" model="school.profession">
+            <field name="name">Урлаг</field>
+        </record>
+		<record id="prof_humane" model="school.profession">
+            <field name="name">Хүмүүнлэгийн ухаан</field>
+        </record>
+		<record id="prof_social" model="school.profession">
+            <field name="name">Нийгмийн ухаан</field>
+        </record>
+		<record id="prof_journalism" model="school.profession">
+            <field name="name">Сэтгүүл зүй, мэдээлэл</field>
+        </record>
+		<record id="prof_economy" model="school.profession">
+            <field name="name">Эдийн засаг</field>
+        </record>
+		<record id="prof_teach" model="school.profession">
+            <field name="name">Худалдаа, бизнесийн удирдлага</field>
+        </record>
+		<record id="prof_law" model="school.profession">
+            <field name="name">Хууль</field>
+        </record>
+		<record id="prof_geography" model="school.profession">
+            <field name="name">Хими, биологи, газарзүй</field>
+        </record>
+		<record id="prof_physics" model="school.profession">
+            <field name="name">Физик</field>
+        </record>
+		<record id="prof_math" model="school.profession">
+            <field name="name">Математик, статистик</field>
+        </record>
+		<record id="prof_calc" model="school.profession">
+            <field name="name">Тооцоолон бодох техник</field>
+        </record>
+		<record id="prof_engineer" model="school.profession">
+            <field name="name">Инженер, техник</field>
+        </record>
+		<record id="prof_industry" model="school.profession">
+            <field name="name">Үйлдвэрлэл</field>
+        </record>
+		<record id="prof_construction" model="school.profession">
+            <field name="name">Барилга</field>
+        </record>
+		<record id="prof_argiculture" model="school.profession">
+            <field name="name">Хөдөө аж ахуй</field>
+        </record>
+		<record id="prof_animalhospital" model="school.profession">
+            <field name="name">Мал эмнэлэг</field>
+        </record>
+		<record id="prof_medicine" model="school.profession">
+            <field name="name">Анагаах ухаан</field>
+        </record>
+		<record id="prof_socialsec" model="school.profession">
+            <field name="name">Нийгмийн хамгаалал</field>
+        </record>
+		<record id="prof_service" model="school.profession">
+            <field name="name">Үйлчилгээ</field>
+        </record>
+		<record id="prof_logistic" model="school.profession">
+            <field name="name">Тээвэр, холбоо</field>
+        </record>
+		<record id="prof_env" model="school.profession">
+            <field name="name">Байгал хамгаалал</field>
+        </record>
+		<record id="prof_military" model="school.profession">
+            <field name="name">Цэрэг, цагдаа</field>
+        </record>
+		
+        <!-- Албан тушаалууд-->
+		<record id="emp_cat_teacher" model="hr.employee.category">
+         <field name="name">Багш</field>
+        </record>
+        <record id="emp_cat_deptmgr" model="hr.employee.category">
+            <field name="name">Тэнхмийн эрхлэгч</field>
+        </record>    
+        <record id="emp_category_mgr" model="hr.employee.category">
+            <field name="name">Сургалтын менежер</field>
+        </record>
+        <record id="emp_cat_dir" model="hr.employee.category">
+            <field name="name">Захирал</field>
+        </record>
+        <record id="emp_cat_basicthr" model="hr.employee.category">
+            <field name="name">Үндсэн багш</field>
+        </record>
+        <record id="emp_cat_timethr" model="hr.employee.category">
+            <field name="name">Цагийн багш</field>
+        </record>
+        <record id="emp_cat_execdir" model="hr.employee.category">
+            <field name="name">Дэд захирал</field>
+        </record>
+		<record id="emp_cat_dekan" model="hr.employee.category">
+            <field name="name">Декан</field>
+        </record>
+        <record id="emp_cat_mgr" model="hr.employee.category">
+            <field name="name">Сургалтын албаны дарга</field>
+        </record>
+		<record id="emp_cat_realmdir" model="hr.employee.category">
+            <field name="name">Харьяа сургуулийн захирал</field>
+        </record>
+		<record id="emp_cat_realmexecdir" model="hr.employee.category">
+            <field name="name">Харьяа сургуулийн дэд захирал</field>
+        </record>
+		
+   
+        
+        
+        
+        <!-- Тэнхим -->
+        <record id="hr_dept1" model="hr.department">
+            <field name="name">Мэргэжлийн боловсрол</field>
+            <field name="company_id" ref="base.main_company"/>
+			<field name="manager_id" ref="base.user_root"/>
+        </record>
+        <record id="hr_dept2" model="hr.department">
+            <field name="name">Үйлдвэр сургалт, Маркетинг</field>
+            <field name="company_id" ref="base.main_company"/>
+			<field name="manager_id" ref="base.user_root"/>
+        </record>
+        <record id="hr_dept3" model="hr.department">
+            <field name="name">Ерөнхий боловсрол</field>
+            <field name="company_id" ref="base.main_company"/>
+			<field name="manager_id" ref="base.user_root"/>
+        </record>
+        <record id="hr_dept4" model="hr.department">
+            <field name="name">Захиргаа, аж ахуй</field>
+            <field name="company_id" ref="base.main_company"/>
+			<field name="manager_id" ref="base.user_root"/>
+        </record>
+        <record id="hr_dept5" model="hr.department">
+            <field name="name">Техник, технологи</field>
+            <field name="company_id" ref="base.main_company"/>
+			<field name="manager_id" ref="base.user_root"/>
+        </record>
+        <record id="hr_dept6" model="hr.department">
+            <field name="name">Барилга, зураг төсөл</field>
+            <field name="company_id" ref="base.main_company"/>
+			<field name="manager_id" ref="base.user_root"/>
+        </record>
+        <record id="hr_dept7" model="hr.department">
+            <field name="name">Барилга</field>
+            <field name="company_id" ref="base.main_company"/>
+			<field name="manager_id" ref="base.user_root"/>
+        </record>
+        
+    </data>
+</openerp>

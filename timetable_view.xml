@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+		<!-- Сургалт/Хичээлийн хуваарь -->
+		<record id="view_school_timetable_form" model="ir.ui.view">
+			<field name="name">school.timetable.form</field>
+			<field name="model">school.timetable</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Хичээлийн хуваарь">
+					<field name="name" />
+					<field name="term_id" />
+					<field colspan="4" name="lines" nolabel="1" widget="one2many_list"
+						mode="tree,form">
+						<tree string="Хуваарь" editable="1" on_write="_on_create_write">
+							<field name="week" select="1" />
+							<field name="time_period" />
+							<field name="sub_id" select="1" />
+							<field name="sub_type" />
+							<field name="grp_id" select="2" />							
+							<field name="teacher_id" select="2" />
+							<field name="classroom_id" />
+						</tree>
+						<form string="Хуваарь">
+							<field name="week" />
+							<field name="time_period" />
+							<field name="sub_id" />
+							<field name="sub_type" />
+							<field name="grp_id" />
+							<field name="teacher_id" />
+							<field name="classroom_id" />							
+						</form>
+				   </field>				  
+				</form>
+			</field>
+		</record>
+		<record id="view_school_timetable_tree" model="ir.ui.view">
+			<field name="name">school.timetable.tree</field>
+			<field name="model">school.timetable</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Хичээлийн хуваарь">
+					<field name="name" select="1" />
+					<field name="term_id" select="1" />
+				</tree>
+			</field>
+		</record>
+		<record id="open_school_timetable" model="ir.actions.act_window">
+			<field name="name">Хичээлийн хуваарь</field>
+			<field name="res_model">school.timetable</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<menuitem name="Хичээлийн хуваарь" id="menu_school_timetable"
+			action="open_school_timetable" parent="menu_school_teaching" />
+
+		<!-- Сургалт/Шалгалтын хуваарь -->
+		<menuitem id="menu_school_exam" name="Шалгалтын Хуваарь"
+			parent="menu_school_teaching" />
+			</data>
+</openerp>

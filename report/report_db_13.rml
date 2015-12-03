@@ -1,0 +1,371 @@
+<?xml version="1.0"?>
+<document filename="test.pdf">
+  <template pageSize="(842.0,595.0)" title="Test" author="Martin Simon" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="28.0" y1="28.0" width="786" height="539"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+    <blockTableStyle id="Standard_Outline">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table1">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table2">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,0" stop="4,2"/>
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,0" stop="-1,0"/>
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="3,1" stop="-1,3"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="7,0" stop="7,2"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="4,2" stop="-1,2"/>
+      <lineStyle kind="LINEAFTER" colorName="#000000" start="-1,0" stop="-1,-1"/>
+      <lineStyle kind="LINEBEFORE" colorName="#000000" start="0,3" stop="-1,-1"/>  
+      <lineStyle kind="LINEABOVE" colorName="#000000" start="0,3" stop="-1,-1"/>  
+      <lineStyle kind="LINEBELOW" colorName="#000000" start="0,-1" stop="-1,-1"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table3">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <blockTableStyle id="Table4">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+    <initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="DejaVuSerif" fontSize="12.0" leading="15" alignment="CENTER"/>
+    <paraStyle name="P2" fontName="DejaVuSerif" fontSize="12.0" leading="15" alignment="CENTER"/>
+    <paraStyle name="P3" fontName="DejaVuSerif" fontSize="9.0" leading="11" alignment="CENTER"/>
+    <paraStyle name="P4" fontName="DejaVuSerif" fontSize="9.0" leading="11" alignment="LEFT"/>
+    <paraStyle name="P5" fontName="DejaVuSerif" fontSize="9.0" leading="11" alignment="RIGHT"/>
+    <paraStyle name="P6" fontName="DejaVuSerif-Bold" fontSize="9.0" leading="11" alignment="CENTER"/>
+    <paraStyle name="Standard" fontName="DejaVuSerif" fontSize="10.0" leading="13"/>
+    <paraStyle name="Heading" fontName="DejaVuSans" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Text body" fontName="DejaVuSerif" fontSize="10.0" leading="13" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="DejaVuSerif" fontSize="10.0" leading="13" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Caption" fontName="DejaVuSerif" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="DejaVuSerif" fontSize="10.0" leading="13"/>
+    <paraStyle name="Table Contents" fontName="DejaVuSerif" fontSize="10.0" leading="13"/>
+    <paraStyle name="Table Heading" fontName="DejaVuSerif" fontSize="10.0" leading="13" alignment="CENTER"/>
+    <paraStyle name="Heading 1" fontName="DejaVuSans-Bold" fontSize="115%" leading="NaN" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Frame contents" fontName="DejaVuSerif" fontSize="10.0" leading="13" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Text" fontName="DejaVuSerif" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Bosoo" fontName="DejaVuSans" fontSize="8.0" leading="10"/>
+    <paraStyle name="Table Contents 1" fontName="DejaVuSans" fontSize="7.0" leading="9"/>
+  </stylesheet>
+  <images/>
+  <story>
+    <blockTable colWidths="262.0,262.0,262.0" style="Table1">
+      <tr>
+        <td>
+          <para style="P4">Үндэсний статистикийн газар батлав</para>
+          <para style="P4">2003 он Тушаал №221</para>
+          <para style="P4">Регистрийн дугаар: [[ abt_school(data['form']) or '']]</para>
+          <para style="P4">Аймаг, нийслэл: [[ city() or '']] </para>
+          <para style="P4">Сум, дүүрэг: [[ district() or '']]</para>
+          <para style="P4">Сургууль: [[ school() or '' ]]</para>
+          <para style="P4">Өмчийн хэлбэр: **Төрийн өмч**</para>
+          <para style="P4">
+            <font color="white"> </font>
+          </para>
+        </td>
+        <td>
+          <para style="P3">
+            <font color="white"> d </font>
+          </para>
+          <para style="P3">
+            <font color="white"> </font>
+          </para>
+          <para style="P6">ГАДААДЫН БОЛОН ХАРЬЯАЛАЛГҮЙ </para>
+          <para style="P6">ИРГЭДЭЭС ИХ ДЭЭД СУРГУУЛЬ,</para>
+          <para style="P6">КОЛЛЕЖИД СУРАЛЦАГЧИД</para>
+          <para style="P6">[[ hich_jil(data['form']) ]]оны хичээлийн жил </para>
+        </td>
+        <td>
+          <para style="P4"><font face="DejaVuSerif-bold" color="black">Төвлөрсөн бус мэдээлэл ДБ-13 </font></para>
+          <para style="P3">
+            <font color="white"> </font>
+          </para>
+          <para style="P4">Өмчийн бүх их, дээд сургууль</para>
+          <para style="P4">коллежиуд харъяа сургууль нэг бүрээр гаргаж,</para>
+          <para style="P4">нэгтгэж 10-р сарын 1 нд БСШУЯ-нд ирүүлнэ. </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P1">
+        <font face="DejaVuSerif" size="9.0"/>
+    </para>
+    <blockTable colWidths="18.0,140.0,40.0,50.0,50.0,50.0,50.0,50.0,85.0,55.0,85.0,85.0,45.0" style="Table2">
+      <tr>
+        <td>
+          <illustration width="1cm" height="0.5cm">
+          		<setFont name="DejaVuSerif" size="10"/>
+				<drawString x="0cm" y="-0.2cm">№</drawString>
+			</illustration>
+        </td>
+        <td>
+          <illustration width="1cm" height="0.5cm">
+          		<setFont name="DejaVuSerif" size="10"/>
+				<drawString x="2cm" y="-0.5cm">Улс</drawString>
+			</illustration>
+        </td>
+        <td>
+          <illustration width="1cm" height="0.5cm">
+          		<setFont name="DejaVuSerif" size="10"/>
+				<drawString x="0cm" y="-0.5cm">Бүгд</drawString>
+			</illustration>
+        </td>
+        <td>
+          <illustration width="1cm" height="0.5cm">
+          		<setFont name="DejaVuSerif" size="10"/>
+				<drawString x="0cm" y="-0.2cm">Үүнээс :</drawString>
+			</illustration>
+        </td>
+        <td>
+          	<illustration width="1cm" height="0.5cm">
+          		<setFont name="DejaVuSerif" size="10"/>
+				<drawString x="1.5cm" y="-0.2cm">Боловсролын зэрэг</drawString>
+			</illustration>
+        </td>
+        <td>
+          <para style="P3"></para>
+        </td>
+        <td>
+          <para style="P3"></para>
+        </td>
+        <td>
+          <para style="P3"></para>
+        </td>
+        <td>
+          <illustration width="1cm" height="0.5cm">
+          		<setFont name="DejaVuSerif" size="10"/>
+				<drawString x="3.5cm" y="-0.2cm">Сургалтын зардал</drawString>
+			</illustration>
+        </td>
+        <td>
+          <para style="P3"></para>
+        </td>
+        <td>
+          <para style="P3"></para>
+        </td>
+        <td>
+          <para style="P3"></para>
+        </td>
+        <td>
+          <para style="P3"></para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P3"></para>
+        </td>
+        <td>
+          <para style="P3"></para>
+        </td>
+        <td>
+          <para style="P3"></para>
+        </td>
+        <td>
+          <para style="P3"></para>
+        </td>
+        <td>
+          <para style="P3"></para>
+        </td>
+        <td>
+          <para style="P3"></para>
+        </td>
+        <td>
+          <para style="P3"></para>
+        </td>
+        <td>
+          <para style="P3"></para>
+        </td>
+        <td>
+          <para style="P3"></para>
+        </td>
+        <td>
+          <para style="P3"></para>
+        </td>
+        <td>
+          <para style="P3"></para>
+        </td>
+        <td>
+          <para style="P3"></para>
+        </td>
+        <td>
+          <para style="P3"></para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P3"> </para>
+        </td>
+        <td>
+          <para style="P3"> </para>
+        </td>
+        <td>
+          <para style="P3"> </para>
+        </td>
+        <td>
+          <para style="P3">Эм</para>
+        </td>
+        <td>
+          <para style="P3">C</para>
+        </td>
+        <td>
+          <para style="P3">D</para>
+        </td>
+        <td>
+          <para style="P3">E</para>
+        </td>
+        <td>
+          <para style="P3">F</para>
+        </td>
+        <td>
+          <para style="P3">Монгол улсын</para>
+        </td>
+        <td>
+          <para style="P3">Хувийн</para>
+        </td>
+        <td>
+          <para style="P3">Байгууллагын</para>
+        </td>
+        <td>
+          <para style="P3">Тухайн улсын</para>
+        </td>
+        <td>
+          <para style="P3">Бусад</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P3">[[ repeatIn(lines(data['form']), 'l') ]]</para>
+        </td>
+        <td>
+          <para style="P3"> [[ l['name'] or '' ]] </para>
+        </td>
+        <td>
+          <para style="P3"> [[ l['sum'] or '' ]] </para>
+        </td>
+        <td>
+          <para style="P3"> [[ l['female'] or '' ]] </para>
+        </td>
+        <td>
+          <para style="P3"> [[ l['c'] or '' ]] </para>
+        </td>
+        <td>
+          <para style="P3"> [[ l['d'] or '' ]] </para>
+        </td>
+        <td>
+          <para style="P3"> [[ l['e'] or '' ]] </para>
+        </td>
+        <td>
+          <para style="P3"> [[ l['f'] or '' ]] </para>
+        </td>
+        <td>
+          <para style="P3">[[ l['gov'] or '' ]]</para>
+        </td>
+        <td>
+          <para style="P3">[[ l['self'] or '' ]]</para>
+        </td>
+        <td>
+          <para style="P3">[[ l['foreign'] or '' ]]</para>
+        </td>
+        <td>
+          <para style="P3">[[ l['other'] or '' ]]</para>
+        </td>
+        <td>
+          <para style="P3">[[ l['com'] or '' ]]</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P3"></para>
+        </td>
+        <td>
+          <para style="P3">Дүн </para>
+        </td>
+        <td>
+          <para style="P3">[[ sum()['all'] ]]</para>
+        </td>
+        <td>
+          <para style="P3">[[ sum()['female'] ]]</para>
+        </td>
+        <td>
+          <para style="P3">[[ sum()['sum_c'] ]]</para>
+        </td>
+        <td>
+          <para style="P3">[[ sum()['sum_d'] ]]</para>
+        </td>
+        <td>
+          <para style="P3">[[ sum()['sum_e'] ]]</para>
+        </td>
+        <td>
+          <para style="P3">[[ sum()['sum_f'] ]]</para>
+        </td>
+        <td>
+          <para style="P3">[[ sum()['sum_gov'] ]]</para>
+        </td>
+        <td>
+          <para style="P3">[[ sum()['sum_self'] ]]</para>
+        </td>
+        <td>
+          <para style="P3">[[ sum()['sum_for'] ]]</para>
+        </td>
+        <td>
+          <para style="P3">[[ sum()['sum_oth'] ]]</para>
+        </td>
+        <td>
+          <para style="P3">[[ sum()['sum_com'] ]]</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P1">
+        <font face="DejaVuSerif" size="9.0"/>
+    </para>
+    <blockTable colWidths="300.0" style="Table3">
+      <tr>
+        <td>
+          <para style="P3"> Тайлбар : C- диплом, D - бакалавр, E - магистр, F - доктор</para>
+        </td>
+      </tr>
+    </blockTable>
+    <blockTable colWidths="240.0,200.0,350.0" style="Table4">
+      <tr>
+        <td>
+        <para style="P3"><font color="white">PPP</font></para>
+          <para style="P5">Мэдээг гаргасан: Сургалтын албаны арга зүйч</para>
+        </td>
+        <td>
+        <para style="P3"><font color="white">PPP</font></para>
+          <para style="P4">[[ foot()['man'] ]]</para>
+        </td>
+        <td>
+          <para style="P3"><font color="white">PPP</font></para>
+          <para style="P5">(албан тушаал, нэр, гарын үсэг)</para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="P5">Мэдээг хянасан: Захирал</para>
+        </td>
+        <td>
+          <para style="P4">[[ foot()['zah'] ]]</para>
+        </td>
+        <td>
+          <para style="P5">(Байгууллагын дарга / захирал /-ын нэр, гарын үсэг, тэмдэг дарах)</para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P3"><font color="white">PPP</font></para>
+    <para style="P1">
+        <font face="DejaVuSerif" size="9.0">[[ time.strftime('%Y') ]] оны [[ time.strftime('%m') ]]-р сарын [[ time.strftime('%d') ]]-ны өдөр</font>
+    </para>
+  </story>
+</document>
+

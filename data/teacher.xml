@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<openerp>
+	<data noupdate="1">
+        <!-- Албан тушаалууд-->
+        <!--  <record id="emp_category_teacher" model="hr.employee.category">
+            <field name="name">Багш</field>
+        </record>
+        <record id="emp_category_deptmgr" model="hr.employee.category">
+            <field name="name">Тэнхмийн эрхлэгч</field>
+        </record>		
+        <record id="emp_category_mgr" model="hr.employee.category">
+            <field name="name">Сургалтын менежер</field>
+        </record>-->
+        <!-- <record id="emp_category_dir" model="hr.employee.category">
+            <field name="name">Захирал</field>
+        </record>		-->
+    </data>
+</openerp>

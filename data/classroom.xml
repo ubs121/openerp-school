@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<openerp>
+	<data noupdate="1">
+		<record id="lec" model="school.classroom.type">
+			<field name="name">Лекцийн өрөө</field>
+			<field name="shortcut">lec</field>
+		</record>
+		<record id="lab" model="school.classroom.type">
+			<field name="name">Лаборатори</field>
+			<field name="shortcut">lab</field>
+		</record>
+		<record id="sem" model="school.classroom.type">
+			<field name="name">Семинарын өрөө</field>
+			<field name="shortcut">sem</field>
+		</record>
+		<record id="gym" model="school.classroom.type">
+			<field name="name">Спорт заал</field>
+			<field name="shortcut">gym</field>
+		</record>
+		<record id="art" model="school.classroom.type">
+			<field name="name">Урлагийн заал</field>
+			<field name="shortcut">art</field>
+		</record>
+		<record id="cabinet" model="school.classroom.type">
+			<field name="name">Багшийн өрөө</field>
+			<field name="shortcut">cabinet</field>
+		</record>
+	</data>
+</openerp>

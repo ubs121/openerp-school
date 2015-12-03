@@ -1,0 +1,16 @@
+import wizard_bsheet
+import wizard_diploma
+import wizard_print_student_def
+import wizard_print_grade_def
+import wizard_print_db_1
+import wizard_print_db_2
+import wizard_print_db_3
+import wizard_print_db_5
+import wizard_print_db_7
+import wizard_print_db_8
+import wizard_print_db_9
+import wizard_print_db_10
+import wizard_print_db_12
+import wizard_print_db_13
+import wizard_close_term
+import wizard_teacher_time

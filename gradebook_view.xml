@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<!-- Дүн, Журнал, Шалгалт -->
+		<menuitem id="menu_school_marksheet" name="Дүн" parent="menu_school"
+			sequence="7" />
+
+		<!-- Дүн/Дүнгийн хүснэгт -->
+		<record id="view_school_gbook_form" model="ir.ui.view">
+			<field name="name">school.gbook.form</field>
+			<field name="model">school.gbook</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Диплом">
+					<field name="name" />
+					<field name="type" />
+					<field name="term_id" />
+					<field name="sub_id" />
+					<field name="std_grp" />
+					<separator string="Дүн бодох томъёо" colspan="4" />
+					<field name="eval_formula" nolabel="1" colspan="2" />
+					<field name="lines" colspan="4" nolabel="1" mode="tree,form"
+						attrs="{'readonly':[('state','=','valid')]}">
+						<form string="Дүн">
+							<separator colspan="4" />
+							<field name="std_id" domain="[('grp_id','=',parent.std_grp)]" />
+							<separator colspan="4" />
+							<field name="p1" />
+							<field name="p2" />
+							<field name="p3" />
+							<field name="p4" />
+							<field name="p5" />
+							<separator colspan="4" />
+							<field name="point" readonly="1" />
+							<field name="mark" />
+							<separator colspan="4" />
+							<field name="state" />
+						</form>
+						<!-- 'draft' төлөвтэй мөрүүдийг засаж болно -->
+						<tree string="Оюутнуудын дүн" editable="[('state','=','draft')]"
+							on_write="_on_create_write">
+							<field name="std_id" />							
+							<field name="p1" />
+							<field name="p2" />
+							<field name="p3" />
+							<field name="p4" />
+							<field name="p5" />
+							<field name="point" readonly="1" />
+							<field name="mark" />
+							<field name="state" />
+							<field name="edited_by" />
+							<field name="edited_date" />
+						</tree>
+					</field>
+				</form>
+			</field>
+		</record>
+		<record id="view_school_gbook_tree" model="ir.ui.view">
+			<field name="name">school.gbook.tree</field>
+			<field name="model">school.gbook</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Дүнгийн Хүснэгт">
+					<field name="term_id" select="2" />
+					<field name="name" select="1" />
+					<field name="std_grp" select="1" />
+					<field name="sub_id" select="1" />					
+					<field name="state" select="1" />
+					<field name="eval_by" />
+				</tree>
+			</field>
+		</record>
+
+		<!-- Хичээлийн дүнгийн хавтгай -->
+		<record model="ir.actions.act_window" id="action_open_gbook">
+			<field name="name">Дүнгийн хавтгай</field>
+			<field name="res_model">school.gbook</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_id" ref="view_school_gbook_tree" />
+			<field name="domain">[('type','=','subject')]</field>
+		</record>
+		<menuitem id="menu_school_gbook" name="Дүнгийн хавтгай"
+			action="action_open_gbook" parent="menu_school_marksheet" />
+
+		<!-- Шалгалтын дүнгийн хүснэгт -->
+		<record model="ir.actions.act_window" id="action_open_gbook_exam">
+			<field name="name">Шалгалтын дүн</field>
+			<field name="res_model">school.gbook</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_id" ref="view_school_gbook_tree" />
+			<field name="domain">[('type','=','exam')]</field>
+		</record>
+		<menuitem id="menu_school_gbook_exam" name="Шалгалтын Дүн"
+			action="action_open_gbook_exam" parent="menu_school_marksheet" />
+
+		<!-- Журнал хэвлэх  -->
+		<report id="report_print_gbook" string="Дүнгийн хавтгай хэвлэх"
+			model="school.gbook" name="print_gbook" header="False"
+			rml="school/report/report_print_gbook.rml" />
+	</data>
+</openerp>

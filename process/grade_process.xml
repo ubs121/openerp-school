@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<openerp>
+    <data>
+        
+    <!--
+        Process    
+    -->
+        
+        <record id="process_process_gradebookprocess0" model="process.process">
+            <field eval="1" name="active"/>
+            <field name="model_id" ref="gradebook.model_school_gbook"/>
+            <field eval="&quot;&quot;&quot;Gradebook Process&quot;&quot;&quot;" name="name"/>
+        </record>
+        
+    <!--
+        Process Node
+    -->
+        
+        <record id="process_node_gradebook0" model="process.node">
+            <field name="menu_id" ref="gradebook.menu_school_marksheet"/>
+            <field name="model_id" ref="product.model_school_gbook"/>
+            <field eval="&quot;&quot;&quot;state&quot;&quot;&quot;" name="kind"/>
+            <field eval="&quot;&quot;&quot;Gradebook&quot;&quot;&quot;" name="name"/>
+            <field eval="&quot;&quot;&quot;Gradebook&quot;&quot;&quot;" name="note"/>
+            <field name="process_id" ref="process_process_gradebookprocess0"/>
+            <field eval="&quot;&quot;&quot;object.state in ('draft', 'done') &quot;&quot;&quot;" name="model_states"/>
+            <field eval="1" name="flow_start"/>
+        </record>
+    
+        <record id="process_node_gbookline0" model="process.node">
+            <field name="menu_id" ref="product.menu_school_marksheet"/>
+            <field name="model_id" ref="product.model_gbook_line"/>
+            <field eval="&quot;&quot;&quot;state&quot;&quot;&quot;" name="kind"/>
+            <field eval="&quot;&quot;&quot;Gbook line&quot;&quot;&quot;" name="name"/>
+            <field eval="&quot;&quot;&quot;Gbook line&quot;&quot;&quot;" name="note"/>
+            <field name="process_id" ref="process_process_gradebookprocess0"/>
+            <field eval="0" name="flow_start"/>
+        </record>
+    
+    <!--
+        Process Transition  
+    -->
+    
+        <record id="process_transition_supplierofproduct0" model="process.transition">
+            <field eval="[(6,0,[])]" name="role_ids"/>
+            <field eval="[(6,0,[])]" name="transition_ids"/>
+            <field eval="&quot;&quot;&quot;Suppliers of Product&quot;&quot;&quot;" name="name"/>
+            <field eval="&quot;&quot;&quot;You can see the list of suppliers for that product.&quot;&quot;&quot;" name="note"/>
+            <field model="process.node" name="target_node_id" ref="process_node_supplier0"/>
+            <field model="process.node" name="source_node_id" ref="process_node_product0"/>
+        </record>
+    
+    </data>
+</openerp>

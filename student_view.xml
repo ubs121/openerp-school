@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+		<!-- Оюутан/Оюутнууд -->
+		<record model="ir.ui.view" id="view_school_student_tree">
+			<field name="name">school.student.grad.tree</field>
+			<field name="model">school.student</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Оюутан">
+					<!-- <field name="first_name" select="1" string="Эцгийн нэр" /> -->
+					<field name="name" select="1" string="Нэр" />
+					<field name="gender" select="2" />
+					<field name="code" select="1" />
+					<field name="curr_id" select="1" />
+					<field name="cls" select="1" />
+					<field name="presense" select="2" />
+				</tree>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="view_school_student_form">
+			<field name="name">school.student.grad.form</field>
+			<field name="model">school.student</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Оюутан">
+					<field name="name" select="1" string="Нэр" />
+					<field name="code" select="1" />
+					<field name="image" widget='image' options='{"preview_image": "image_medium"}'/>
+					<notebook colspan="4">
+						<page string="Ерөнхий">
+							<group col="2" colspan="2">
+								<separator string="Оюутан" colspan="2" />
+								<field name="curr_id" select="1" />
+								<field name="curr_name" />
+								<field name="cls" select="1" />
+								<field name="grp_id" on_change="onchange_grp(grp_id)" />
+								<field name="is_graduate" />
+								<field name="presense" />
+								<field name="status" attrs="{'readonly':[('presense','!=','left')]}" />
+							</group>
+							<group col="2" colspan="2">
+								<separator string="Хувийн Мэдээлэл" colspan="2" />
+								<field name="reg_id" />
+								<field name="gender" />
+								<field name="birthdate" string="Төрсөн огноо" />
+							</group>
+							<group col="2" colspan="2">
+								<separator string="Хаяг" colspan="2" />
+								<field name="mobile" select="2" string="Гар утас" />
+								<field name="living_address" />
+								<field name="website" string="Вэб хаяг" />
+							</group>
+						</page>
+						<page string="Элсэлт">
+							<group col="2" colspan="2">
+								<separator colspan="2" string="Төгссөн дунд сургууль" />
+								<field name="k12_school" />
+								<newline />
+								<field name="k12_score" />
+								<newline />
+								<field name="k12_date" />
+								<newline />
+								<field name="k12_diploma" />
+							</group>
+							<group col="2" colspan="2">
+								<field name="admitted_date" />
+								<field name="pre_enroll" />
+							</group>
+						</page>
+						<page string="Суралцсан түүх">
+							<field name="history" colspan="2" nolabel="1" mode="tree">
+								<tree string="Суралцсан түүх">
+									<field name="year_id" />
+									<field name="cls" />
+									<field name="gpa" />
+									<field name="is_paid" />
+									<field name="tuition_type" />
+								</tree>
+							</field>
+						</page>
+						<page string="Сурлага">
+							<field name="gpa" />
+							<field name="gradebook" colspan="4" nolabel="1" mode="tree">
+								<tree string="Дүнгийн жагсаалт">
+									<field name="term_id" />
+									<field name="sub_id" />
+									<field name="mark" />
+									<field name="point" />
+									<field name="state" />
+								</tree>
+							</field>
+						</page>
+						<page string="Ар гэр">
+							<group colspan="4">
+								<field name="rel_contacts" nolabel="1" mode="tree">
+									<tree string="Холбоо барих хүмүүс" editable="top"
+										on_write="_on_create_write">
+										<!-- <field name="first_name" string="Нэр" /> -->
+										<field name="name" string="Эцгийн нэр" />
+										<field name="std_relation" string="Оюутны хэн болох" />
+										<field name="mobile" string="Гар утас" />
+									</tree>
+								</field>
+							</group>
+							<group colspan="2" col="2">
+								<field name="family_head" />
+								<field name="marital" />
+								<field name="family_members" />
+							</group>
+							<group colspan="2" col="2">
+								<field name="family_income" />
+								<field name="poor_family" />
+								<field name="herder_family" />
+								<field name="fatherless" />
+								<field name="motherless" />
+							</group>
+
+						</page>
+						<page string="Нэмэлт Мэдээлэл">
+							<!--  <field name="comment" />  -->
+						</page>
+						
+					</notebook>
+				</form>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="action_open_student_tree">
+			<field name="name">Оюутан</field>
+			<field name="res_model">school.student</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_id" ref="view_school_student_tree" />
+		</record>
+		<menuitem id="menu_school_student_all" name="Оюутнууд"
+			action="action_open_student_tree" parent="menu_school" sequence="3" />
+
+		<!-- Оюутан/Оюутан бүртгэх -->
+		<record id="open_view_student_new" model="ir.actions.act_window">
+			<field name="name">Оюутан бүртгэх</field>
+			<field name="res_model">school.student</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form,tree</field>
+		</record>
+		<menuitem action="open_view_student_new" id="menu_student_new"
+			parent="menu_school_student_all" sequence="1" />
+
+
+		<!-- Оюутан/Шинэ элсэгчид -->
+		<record model="ir.actions.act_window" id="action_open_student_fresh_tree">
+			<field name="name">Шинэ элсэгчид</field>
+			<field name="res_model">school.student</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_id" ref="view_school_student_tree" />
+			<field name="domain">[('cls','=',0)]</field>
+		</record>
+		<menuitem id="menu_school_student_fresh" name="Шинэ элсэгчид"
+			action="action_open_student_fresh_tree" parent="menu_school_student_all"
+			sequence="2" />
+
+		<!-- Оюутан/Төгсөх оюутнууд -->
+
+		<record id="action_open_grad_tree" model="ir.actions.act_window">
+			<field name="name">Төгсөх оюутнууд</field>
+			<field name="res_model">school.student</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_id" ref="view_school_student_tree" />
+			<field name="domain">[('is_graduate','=',True)]</field>
+		</record>
+		<menuitem id="menu_school_graduate" name="Төгсөх Оюутнууд"
+			action="action_open_grad_tree" parent="menu_school_student_all"
+			sequence="9" />
+
+		
+
+		<!-- Оюутан/Төгсөх оюутнууд/Дипломын хавсралт хэвлэх -->
+		<report id="school_student_diploma" string="Дипломын Хавсралт"
+			model="school.student" name="diploma" header="False"
+			rml="school/report/report_diploma.rml" auto="False" menu="False" />
+
+		<wizard id="wizard_diploma" string="Дипломын Хавсралт" model="school.student"
+			name="diploma.report" menu="False" />
+
+		<!-- Оюутан/Бүртгэлийн мэдээлэл хэвлэх -->
+		<report id="school_student_enrollment" string="Бүртгэлийн мэдээлэл"
+			model="school.student" name="enrollment" header="False"
+			rml="school/report/report_enrollment.rml" auto="False" menu="False" />
+
+		<wizard id="wizard_enrollment" string="Бүртгэлийн мэдээлэл"
+			model="school.student" name="enrollment.report" menu="False" />
+
+		<!-- Оюутан/Анги, Бүлэг -->
+		<record id="view_school_stdgroup_form" model="ir.ui.view">
+			<field name="name">school.student.group.form</field>
+			<field name="model">school.student.group</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Анги">
+					<notebook colspan="4">
+						<page string="Ерөнхий">
+							<field name="name" select="1" />
+							<field name="code" select="1" />
+							<field name="cls" />
+							<field name="is_graduate" />
+							<field name="ass_teacher" />
+							<!--field name="leader"/ -->
+							<separator colspan="4" />
+							<field name="curr_id" select="1" />
+							<field name="pre_group" />
+							<field name="year_id" select="1" />
+							<field name="tuition_amount" />
+							<separator colspan="4" />
+							<field name="members" colspan="4" nolabel="1" mode="tree">
+								<tree string="Гишүүд">
+									<field name="name" />
+									<field name="code" />
+									<field name="cls" />
+									<field name="presense" />
+								</tree>
+							</field>
+						</page>
+						<page string="Нэмэлт мэдээлэл">
+							<!--   <field name="comment" /> -->
+						</page>
+					</notebook>
+				</form>
+			</field>
+		</record>
+		<record id="view_school_stdgroup_tree" model="ir.ui.view">
+			<field name="name">school.student.group.tree</field>
+			<field name="model">school.student.group</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Анги">
+					<field name="name" select="1" />
+					<field name="code" select="1" />
+					<field name="year_id" select="1" />
+					<field name="curr_id" select="1" />
+					<field name="cls" select="2" />
+				</tree>
+			</field>
+		</record>
+		<record id="open_school_stdgroup" model="ir.actions.act_window">
+			<field name="name">Ангиуд</field>
+			<field name="res_model">school.student.group</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<!-- <field name="domain">[('year','=',True)]</field> -->
+		</record>
+
+		<menuitem name="Ангиуд" id="menu_open_school_stdgroup"
+			action="open_school_stdgroup" parent="menu_school_student_all"
+			sequence="4" />
+			
+		<record model="ir.actions.act_window" id="action_open_student1">
+			<field name="name">1-р анги</field>
+			<field name="res_model">school.student</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_id" ref="view_school_student_tree" />
+			<field name="domain">[('cls','=',1)]</field>
+		</record>
+		<menuitem id="menu_school_student1" name="1-р анги"
+			action="action_open_student1" parent="menu_open_school_stdgroup"
+			sequence="1" />
+			
+		<record model="ir.actions.act_window" id="action_open_student2">
+			<field name="name">2-р анги</field>
+			<field name="res_model">school.student</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_id" ref="view_school_student_tree" />
+			<field name="domain">[('cls','=',2)]</field>
+		</record>
+		<menuitem id="menu_school_student2" name="2-р анги"
+			action="action_open_student2" parent="menu_open_school_stdgroup"
+			sequence="2" />
+			
+			
+		<record model="ir.actions.act_window" id="action_open_student3">
+			<field name="name">3-р анги</field>
+			<field name="res_model">school.student</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_id" ref="view_school_student_tree" />
+			<field name="domain">[('cls','=',3)]</field>
+		</record>
+		<menuitem id="menu_school_student3" name="3-р анги"
+			action="action_open_student3" parent="menu_open_school_stdgroup"
+			sequence="3" />
+			
+		<record model="ir.actions.act_window" id="action_open_student4">
+			<field name="name">4-р анги</field>
+			<field name="res_model">school.student</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="view_id" ref="view_school_student_tree" />
+			<field name="domain">[('cls','=',4)]</field>
+		</record>
+		<menuitem id="menu_school_student4" name="4-р анги"
+			action="action_open_student4" parent="menu_open_school_stdgroup"
+			sequence="4" />
+
+		<!-- ****************** Тайлангууд ************************** -->
+
+		<!-- Дипломын Хавсралт -->
+		<report auto="False" id="student_diploma_print" model="school.student"
+			name="diploma" rml="school/report/report_diploma.rml" string="Дипломын Хавсралт" />
+
+		<!-- Тодорхойлолт хэвлэх -->
+		<report id="school_student_def" string="Оюутны Тодорхойлолт"
+			model="school.student" name="student_def" header="False"
+			rml="school/report/report_student_def.rml" auto="False" menu="False" />
+		<wizard string="Оюутны Тодорхойлолт" id="wizard_print_student_def"
+			menu="False" model="school.student" name="school.student.def" />
+
+		<menuitem id="menu_school_student_def_print" icon="STOCK_PRINT"
+			action="wizard_print_student_def" parent="menu_school_report" />
+
+		<menuitem id="menu_print_diploma" action="wizard_diploma"
+			icon="STOCK_PRINT" parent="menu_school_report" sequence="10" />
+
+		<!-- Дүнгийн тодорхойлолт -->
+		<report id="school_grade_def" string="Дүнгийн Тодорхойлолт"
+			model="school.student" name="grade_def" header="False"
+			rml="school/report/report_grade_def.rml" auto="False" menu="False" />
+		<wizard string="Дүнгийн Тодорхойлолт" id="wizard_print_grade_def"
+			menu="False" model="school.student" name="school.grade.def" />
+
+		<menuitem id="menu_school_grade_def_print" icon="STOCK_PRINT"
+			action="wizard_print_grade_def" parent="menu_school_report" />
+
+	</data>
+</openerp>

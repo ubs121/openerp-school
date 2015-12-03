@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data noupdate="1">
+	<!-- Groups -->
+    <record id="group_school_director" model="res.groups">
+        <field name="name">Удирдлага</field>
+    </record>
+    <record id="group_school_manager" model="res.groups">
+        <field name="name">Сургалтын Менежер</field>
+    </record>
+	<record id="group_school_teacher" model="res.groups">
+        <field name="name">Багш</field>
+    </record>
+	<record id="group_school_student" model="res.groups">
+        <field name="name">Оюутан</field>
+    </record>
+	
+	<!-- "Сургууль/Багш" - Удирдлага, Сургалтын Менежер, Багш -->
+	<record model='ir.ui.menu' id='menu_school_teacher'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_director'),ref('group_school_manager'),ref('group_school_teacher')])]" />
+    </record>
+	
+	<!-- "Сургууль/Багш/Цагийн бүртгэл" - Удирдлага, Сургалтын Менежер, Багш -->
+	<record model='ir.ui.menu' id='menu_school_teacher_consummation'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_director'),ref('group_school_manager'),ref('group_school_teacher')])]" />
+    </record>
+	
+	<!-- "Сургууль/Дүн" - Удирдлага, Сургалтын Менежер, Багш -->
+	<record model='ir.ui.menu' id='menu_school_marksheet'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_director'),ref('group_school_manager'),ref('group_school_teacher')])]" />
+    </record>
+	
+	<!-- "Сургууль/Дүн/Дүнгийн хавтгай" - Сургалтын Менежер, Багш -->
+	<record model='ir.ui.menu' id='menu_school_gbook'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_manager'),ref('group_school_teacher')])]" />
+    </record>
+	
+	<!-- "Сургууль/Дүн/Шалгалтын Дүн" - Сургалтын Менежер, Багш -->
+	<record model='ir.ui.menu' id='menu_school_gbook_exam'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_manager'),ref('group_school_teacher')])]" />
+    </record>
+	
+	<!-- "Сургууль/Оюутнууд" - Удирдлага, Сургалтын Менежер, Багш, Оюутан -->
+	<record model='ir.ui.menu' id='menu_school_student_all'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_director'),ref('group_school_manager'),ref('group_school_teacher'),ref('group_school_student')])]" />
+    </record>
+	
+	<!-- "Сургууль/Оюутнууд/Ангиуд" - Удирдлага, Сургалтын Менежер, Багш -->
+	<record model='ir.ui.menu' id='menu_open_school_stdgroup'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_director'),ref('group_school_manager'),ref('group_school_teacher')])]" />
+    </record>
+	
+	<!-- "Сургууль/Оюутнууд/Дипломын бүртгэл" - Удирдлага, Сургалтын Менежер -->
+	<record model='ir.ui.menu' id='menu_school_diploma'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_director'),ref('group_school_manager')])]" />
+    </record>
+	
+	<!-- "Сургууль/Оюутнууд/Оюутан бүртгэх" - Сургалтын Менежер -->
+	<record model='ir.ui.menu' id='menu_student_new'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_manager')])]" />
+    </record>
+	
+	<!-- "Сургууль/Оюутнууд/Төгсөх Оюутнууд" - Удирдлага, Сургалтын Менежер, Багш -->
+	<record model='ir.ui.menu' id='menu_school_graduate'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_director'),ref('group_school_manager'),ref('group_school_teacher')])]" />
+    </record>
+	
+	<!-- "Сургууль/Оюутнууд/Шинэ элсэгчид" - Удирдлага, Сургалтын Менежер, Багш -->
+	<record model='ir.ui.menu' id='menu_school_student_fresh'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_director'),ref('group_school_manager'),ref('group_school_teacher')])]" />
+    </record>
+	
+	<!-- "Сургууль/Сургалт/Мэргэжил" - Удирдлага, Сургалтын Менежер, Багш, Оюутан -->
+	<record model='ir.ui.menu' id='menu_open_school_prof'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_director'),ref('group_school_manager'),ref('group_school_teacher'),ref('group_school_student')])]" />
+    </record>
+	
+	<!-- "Сургууль/Сургалт/Мэргэжил/Сургалтын Хөтөлбөр" - Удирдлага, Сургалтын Менежер, Багш, Оюутан -->
+	<record model='ir.ui.menu' id='menu_action_school_curr_form'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_director'),ref('group_school_manager'),ref('group_school_teacher'),ref('group_school_student')])]" />
+    </record>
+	
+	<!-- "Сургууль/Сургалт/Мэргэжил" - Удирдлага, Сургалтын Менежер, Багш, Оюутан -->
+	<record model='ir.ui.menu' id='menu_open_school_prof'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_director'),ref('group_school_manager'),ref('group_school_teacher'),ref('group_school_student')])]" />
+    </record>
+	
+	<!-- "Сургууль/Сургалт/Хичээл" - Удирдлага, Сургалтын Менежер, Багш, Оюутан -->
+	<record model='ir.ui.menu' id='menu_school_subject'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_director'),ref('group_school_manager'),ref('group_school_teacher'),ref('group_school_student')])]" />
+    </record>
+	
+	<!-- "Сургууль/Сургалт/Мэргэжил" - Удирдлага, Сургалтын Менежер, Багш, Оюутан -->
+	<record model='ir.ui.menu' id='menu_open_school_prof'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_director'),ref('group_school_manager'),ref('group_school_teacher'),ref('group_school_student')])]" />
+    </record>
+	
+	<!-- "Сургууль/Сургалт/Хичээл Төлөвлөлт" - Удирдлага, Сургалтын Менежер, Оюутан -->
+	<record model='ir.ui.menu' id='menu_school_offering'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_director'),ref('group_school_manager'),ref('group_school_student')])]" />
+    </record>
+	
+	<!-- "Сургууль/Сургалт/Хичээлийн хуваарь" - Удирдлага, Сургалтын Менежер, Багш, Оюутан -->
+	<record model='ir.ui.menu' id='menu_school_timetable'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_director'),ref('group_school_manager'),ref('group_school_teacher'),ref('group_school_student')])]" />
+    </record>
+	
+	<!-- "Сургууль/Сургалт/Шалгалтын Хуваарь" - Удирдлага, Сургалтын Менежер, Багш, Оюутан -->
+	<record model='ir.ui.menu' id='menu_school_exam'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_director'),ref('group_school_manager'),ref('group_school_teacher'),ref('group_school_student')])]" />
+    </record>
+	
+	<!-- "Сургууль/Тайлан/Б маягт" - Удирдлага, Сургалтын Менежер -->
+	<record model='ir.ui.menu' id='menu_b_sheet_report'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_director'),ref('group_school_manager')])]" />
+    </record>
+	
+	<!-- "Сургууль/Тайлан/ДБ маягтууд/ДБ-1 маягт" - Удирдлага, Сургалтын Менежер -->
+	<record model='ir.ui.menu' id='menu_db_1_report'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_director'),ref('group_school_manager')])]" />
+    </record>
+	
+	<!-- "Сургууль/Тайлан/ДБ маягтууд/ДБ-2 маягт" - Удирдлага, Сургалтын Менежер -->
+	<record model='ir.ui.menu' id='menu_db_2_report'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_director'),ref('group_school_manager')])]" />
+    </record>
+	
+	<!-- "Сургууль/Тайлан/ДБ маягтууд/ДБ-3 маягт" - Удирдлага, Сургалтын Менежер -->
+	<record model='ir.ui.menu' id='menu_db_3_report'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_director'),ref('group_school_manager')])]" />
+    </record>
+	
+	<!-- "Сургууль/Тайлан/ДБ маягтууд/ДБ-5 маягт" - Удирдлага, Сургалтын Менежер -->
+	<record model='ir.ui.menu' id='menu_db_5_report'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_director'),ref('group_school_manager')])]" />
+    </record>
+	
+	<!-- "Сургууль/Тайлан/ДБ маягтууд/ДБ-7 маягт" - Удирдлага, Сургалтын Менежер -->
+	<record model='ir.ui.menu' id='menu_db_7_report'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_director'),ref('group_school_manager')])]" />
+    </record>
+	
+	<!-- "Сургууль/Тайлан/ДБ маягтууд/ДБ-8 маягт" - Удирдлага, Сургалтын Менежер -->
+	<record model='ir.ui.menu' id='menu_db_8_report'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_director'),ref('group_school_manager')])]" />
+    </record>
+	
+	<!-- "Сургууль/Тайлан/ДБ маягтууд/ДБ-9 маягт" - Удирдлага, Сургалтын Менежер -->
+	<record model='ir.ui.menu' id='menu_db_9_report'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_director'),ref('group_school_manager')])]" />
+    </record>
+	
+	<!-- "Сургууль/Тайлан/ДБ маягтууд/ДБ-10 маягт" - Удирдлага, Сургалтын Менежер -->
+	<record model='ir.ui.menu' id='menu_db_10_report'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_director'),ref('group_school_manager')])]" />
+    </record>
+	
+	<!-- "Сургууль/Тайлан/ДБ маягтууд/ДБ-12 маягт" - Удирдлага, Сургалтын Менежер -->
+	<record model='ir.ui.menu' id='menu_db_12_report'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_director'),ref('group_school_manager')])]" />
+    </record>
+	
+	<!-- "Сургууль/Тайлан/Дипломын Хавсралт" - Сургалтын Менежер, Оюутан -->
+	<record model='ir.ui.menu' id='menu_print_diploma'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_manager'),ref('group_school_student')])]" />
+    </record>
+	
+	<!-- "Сургууль/Тайлан/Дүнгийн Тодорхойлолт" - Сургалтын Менежер, Оюутан -->
+	<record model='ir.ui.menu' id='menu_school_grade_def_print'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_manager'),ref('group_school_student')])]" />
+    </record>
+	
+	<!-- "Сургууль/Тайлан/Оюутны Тодорхойлолт" - Сургалтын Менежер, Оюутан -->
+	<record model='ir.ui.menu' id='menu_school_student_def_print'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_manager'),ref('group_school_student')])]" />
+    </record>
+	
+	<!-- "Сургууль/Тохиргоо/Анги/танхим/Анги/танхим" - Сургалтын Менежер -->
+	<record model='ir.ui.menu' id='menu_open_school_classroom'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_manager')])]" />
+    </record>
+	
+	<!-- "Сургууль/Тохиргоо/Анги/танхим/Өрөөний төрөл" - Сургалтын Менежер -->
+	<record model='ir.ui.menu' id='menu_open_school_classroom_type'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_manager')])]" />
+    </record>
+	
+	<!-- "Сургууль/Тохиргоо/Сургууль" - Сургалтын Менежер -->
+	<record model='ir.ui.menu' id='menu_school_info_form'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_manager')])]" />
+    </record>
+	
+	<!-- "Сургууль/Тохиргоо/Үнэлгээ" - Сургалтын Менежер -->
+	<record model='ir.ui.menu' id='menu_open_school_mark'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_manager')])]" />
+    </record>
+	
+	<!-- "Сургууль/Тохиргоо/Хугацаа/Семестер" - Сургалтын Менежер -->
+	<record model='ir.ui.menu' id='menu_open_school_semester'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_manager')])]" />
+    </record>
+	
+	<!-- "Сургууль/Тохиргоо/Хугацаа/Хичээлийн жил" - Сургалтын Менежер -->
+	<record model='ir.ui.menu' id='menu_open_school_year'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_manager')])]" />
+    </record>
+	
+	<!-- "Сургууль/Тохиргоо/Хугацаа/Цагийн хуваарь" - Сургалтын Менежер -->
+	<record model='ir.ui.menu' id='menu_open_school_timeperiod'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_manager')])]" />
+    </record>
+	
+	<!-- "Сургууль/Улирлын хаалт хийх" - Сургалтын Менежер -->
+	<record model='ir.ui.menu' id='menu_close_term'>
+        <field name="groups_id" eval="[(6,0,[ref('group_school_manager')])]" />
+    </record>
+
+</data>
+</openerp>
